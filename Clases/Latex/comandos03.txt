@@ -1,0 +1,1000 @@
+   59  pdflatex Apuntes.tex
+   60  evince Apuntes.pdf
+   61  nano Apuntes.tex
+   62  pdflatex Apuntes.tex
+   63  nano Apuntes.tex
+   64  pdflatex Apuntes.tex
+   65  nano Apuntes.tex
+   66  pdflatex Apuntes.tex
+   67  nano Apuntes.tex
+   68  pdflatex Apuntes.tex
+   69  nano Apuntes.tex
+   70  pdflatex Apuntes.tex
+   71  nano Apuntes.tex
+   72  pdflatex Apuntes.tex
+   73  nano Apuntes.tex
+   74  pdflatex Apuntes.tex
+   75  evince Apuntes.pdf
+   76  nano Apuntes.tex
+   77  pwd
+   78  nano Apuntess.tex
+   79  pwd
+   80  nano Ejercicio.tex
+   81  pdflatex Ejercicio.tex
+   82  nano Ejercicio.tex
+   83  pdflatex Ejercicio.tex
+   84  nano Ejercicio.tex
+   85  pdflatex Ejercicio.tex
+   86  nano Ejercicio.tex
+   87  pdflatex Ejercicio.tex
+   88  evince Ejercicio.pdf
+   89  nano Ejercicio.tex
+   90  python3
+   91  clear
+   92  python
+   93  clear
+   94  python
+   95  python3
+   96  nano Ejercicio.py
+   97  python.3 Ejercicio.py
+   98  python Ejercicio.py
+   99  nano Ejercicio.py
+  100  python Ejercicio.py
+  101  nano Ejercicio.py
+  102  python.3 Ejercicio.py
+  103  nano Ejercicio.py
+  104  python3
+  105  python
+  106  nano operaciones.py
+  107  python3 operaciones.py
+  108  nano operaciones.py
+  109  python3 operaciones.py
+  110  nano holaMundo.py
+  111  nano operaciones.py
+  112  pyhon3 operaciones.py
+  113  python operaciones.py
+  114  nano operaciones.py
+  115  python3 operaciones.py
+  116  nano operaciones.py
+  117  python3 operaciones.py
+  118  nano operaciones.py
+  119  python3 operaciones.py
+  120  nano operaciones.py
+  121  python3 operaciones.py
+  122  python operaciones.py
+  123  nano operaciones.py
+  124  python3 operaciones.py
+  125  nano operaciones.py
+  126  python3 operaciones.py
+  127  nano operaciones.py
+  128  python operaciones.py
+  129  python3 operaciones.py
+  130  nano operaciones.py
+  131  python3 operaciones.py
+  132  nano operaciones.py
+  133  python3 operaciones.py
+  134  nano operaciones.py
+  135  python3 operaciones.py
+  136  pyhon3 operaciones.py
+  137  python3 operaciones.py
+  138  nano operaciones.py
+  139  python operaciones.py
+  140  python3 operaciones.py
+  141  nano operaciones.py
+  142  python3 operaciones.py
+  143  nano operaciones.py
+  144  python3 numerosletras.py
+  145  nano numerosletras.py
+  146  python3 numerosletras.py
+  147  nano numerosletras.py
+  148  python3 numerosletras.py
+  149  nano numerosletras.py
+  150  python3 numerosletras.py
+  151  nano numerosletras.py
+  152  python3 numerosletras.py
+  153  nano numerosletras.py
+  154  python3 numerosletras.py
+  155  nano numerosletras.py
+  156  python3 numerosletras.py
+  157  nano numerosletras.py
+  158  python3 numerosletras.py
+  159  nano numerosletras.py
+  160  python3 numerosletras.py
+  161  nano numerosletras.py
+  162  python3 numerosletras.py
+  163  nano numerosletras.py
+  164  python3 numerosletras.py
+  165  nano numerosletras.py
+  166  python3 numerosletras.py
+  167  nano numerosletras.py
+  168  python3 numerosletras.py
+  169  nano numerosletras.py
+  170  python3 numerosletras.py
+  171  nano numerosletras.py
+  172  clear
+  173  nano numerosletras.py
+  174  python numerosletras.py
+  175  python3 numerosletras.py
+  176  nano numerosletras.py
+  177  python3 numerosletras.py
+  178  nano numerosletras.py
+  179  python3 numerosletras.py
+  180  nano numerosletras.py
+  181  python3 numerosletras.py
+  182  python3 numerosloetras.py
+  183  python3 numerosletras.py
+  184  nano numerosletras.py
+  185  python3
+  186  nano binario.py
+  187  python3 binario.py
+  188  nano binario.py
+  189  python3 binario.py
+  190  nano binario.py
+  191  python3 binario.py
+  192  nano binario.py
+  193  python3 binario.py
+  194  nano binario.py
+  195  python3 binario.py
+  196  nano binario.py
+  197  python3 binario.py
+  198  nano binario.py
+  199  python3 binario.py
+  200  nano binbario.py
+  201  nano binario.py
+  202  python3 binario.py
+  203  nano binario.py
+  204  python3 binario.py
+  205  nano binario.py
+  206  python3 binario.py
+  207  nano binario.py
+  208  python3 binario.py
+  209  nano binario.py
+  210  python3 binario.py
+  211  nano binario.py
+  212  python3 binario.py
+  213  nano binario.py
+  214  python3 binario.py
+  215  nano binario.py
+  216  python3 binario.py
+  217  nano binario.py
+  218  python3 binario.py
+  219  nano binario.py
+  220  python3 binario.py
+  221  nano binario.py
+  222  python3 binario.py
+  223  nano asterisco.py
+  224  python3 asterisco.py
+  225  nano asterisco.py
+  226  python3 asterisco.py
+  227  nano asteriscos.py
+  228  nano asterisco.py
+  229  python3 asterisco.py
+  230  nano asterisco.py
+  231  python3 asterisco.py
+  232  nano asterisco.py
+  233  python3 asterisco.py
+  234  nano asterisco.py
+  235  python3 asterisco.py
+  236  nano asterisco.py
+  237  python3 asterisco.py
+  238  nano asterisco.py
+  239  python3 asterisco.py
+  240  nano asterisco.py
+  241  python3 asterisco.py
+  242  nano asterisco.py
+  243  nano asterisco1.py
+  244  python3 asterisco1.py
+  245  nano asterisco1.py
+  246  python
+  247  python3
+  248  nano asteriscos.py
+  249  nano triangulo.py
+  250  python triangulo.py
+  251  python3
+  252  nano funciones.py
+  253  python funciones.py
+  254  nano funciones.py
+  255  python funciones.py
+  256  nano funciones.py
+  257  python funciones.py
+  258  nano funciones.py
+  259  python funciones.py
+  260  nano funciones.py
+  261  python funciones.py
+  262  nano funciones.py
+  263  python funciones.py
+  264  nano funciones.py
+  265  python funciones.py
+  266  nano funciones.py
+  267  nano binario.py
+  268  nano caso genral
+  269  nano CasoGeneralBinario.py
+  270  python3 CasoGeneralBinario.py
+  271  nano CasoGeneralBinario.py
+  272  python3 CasoGeneralBinario.py
+  273  nano CasoGeneralBinario.py
+  274  python3 CasoGeneralBinario.py
+  275  nano CasoGeneralBinario.py
+  276  python3 CasoGeneralBinario.py
+  277  nano CasoGeneralBinario.py
+  278  python3 CasoGeneralBinario.py
+  279  nano CasoGeneralBinario.py
+  280  python3 CasoGeneralBinario.py
+  281  nano CasoGeneralBinario.py
+  282  python3 CasoGeneralBinario.py
+  283  nano CasoGeneralBinario.py
+  284  python3 CasoGeneralBinario.py
+  285  nano CasoGeneralBinario.py
+  286  python3 CasoGeneralBinario.py
+  287  nano CasoGeneralBinario.py
+  288  python3 CasoGeneralBinario.py
+  289  nano CasoGeneralBinario.py
+  290  python3 CasoGeneralBinario.py
+  291  nano CasoGeneralBinario.py
+  292  python3 CasoGeneralBinario.py
+  293  nano CasoGeneralBinario.py
+  294  python3 CasoGeneralBinario.py
+  295  nano CasoGeneralBinario.py
+  296  python3 CasoGeneralBinario.py
+  297  nano CasoGeneralBinario.py
+  298  python3 CasoGeneralBinario.py
+  299  nano CasoGeneralBinario.py
+  300  python3 CasoGeneralBinario.py
+  301  nano CasoGeneralBinario.py
+  302  python3 CasoGeneralBinario.py
+  303  nano CasoGeneralBinario.py
+  304  python3
+  305  clear
+  306  python3
+  307  nano triangulo.py
+  308  python triangulo.py
+  309  nano triangulo.py
+  310  nano trianguloin.py
+  311  python trianguloin.py
+  312  nano trianguloin.py
+  313  python trianguloin.py
+  314  nano trianguloin.py
+  315  nano triangulo.py
+  316  nano trianguloin.py
+  317  nano triangulo.py
+  318  python trianguloin.py
+  319  nano trianguloin.py
+  320  python trianguloin.py
+  321  nano trianguloin.py
+  322  python trianguloin.py
+  323  nano trianguloin.py
+  324  python trianguloin.py
+  325  nano trianguloin.py
+  326  python trianguloin.py
+  327  nano trianguloin.py
+  328  python trianguloin.py
+  329  nano trianguloin.py
+  330  python trianguloin.py
+  331  nano trianguloin.py
+  332  python trianguloin.py
+  333  nano trianguloin.py
+  334  python trianguloin.py
+  335  nano trianguloin.py
+  336  python trianguloin.py
+  337  nano trianguloin.py
+  338  python trianguloin.py
+  339  nano trianguloin.py
+  340  python trianguloin.py
+  341  nano trianguloin.py
+  342  python trianguloin.py
+  343  nano trianguloin.py
+  344  python trianguloin.py
+  345  nano trianguloin.py
+  346  python trianguloin.py
+  347  nano trianguloin.py
+  348  python trianguloin.py
+  349  nano trianguloin.py
+  350  python trianguloin.py
+  351  nano trianguloin.py
+  352  python trianguloin.py
+  353  nano trianguloin.py
+  354  python trianguloin.py
+  355  nano trianguloin.py
+  356  python trianguloin.py
+  357  nano trianguloin.py
+  358  python trianguloin.py
+  359  nano trianguloin.py
+  360  python trianguloin.py
+  361  nano trianguloin.py
+  362  python trianguloin.py
+  363  nano trianguloin.py
+  364  python trianguloin.py
+  365  nano trianguloin.py
+  366  python trianguloin.py
+  367  nano trianguloin.py
+  368  python trianguloin.py
+  369  nano trianguloin.py
+  370  python trianguloin.py
+  371  nano trianguloin.py
+  372  python trianguloin.py
+  373  nano trianguloin.py
+  374  python trianguloin.py
+  375  nano trianguloin.py
+  376  python trianguloin.py
+  377  nano trianguloin.py
+  378  python trianguloin.py
+  379  nano trianguloin.py
+  380  python trianguloin.py
+  381  nano trianguloin.py
+  382  python trianguloin.py
+  383  nano trianguloin.py
+  384  python trianguloin.py
+  385  nano trianguloin.py
+  386  python trianguloin.py
+  387  nano trianguloin.py
+  388  python trianguloin.py
+  389  nano trianguloin.py
+  390  python trianguloin.py
+  391  nano trianguloin.py
+  392  python trianguloin.py
+  393  nano trianguloin.py
+  394  python trianguloin.py
+  395  nano trianguloin.py
+  396  python trianguloin.py
+  397  nano trianguloin.py
+  398  python trianguloin.py
+  399  nano trianguloin.py
+  400  python trianguloin.py
+  401  nano trianguloin.py
+  402  python trianguloin.py
+  403  nano trianguloin.py
+  404  python trianguloin.py
+  405  nano trianguloin.py
+  406  python trianguloin.py
+  407  nano trianguloin.py
+  408  python3 trianguloin.py
+  409  nano trianguloin.py
+  410  nano pi.py
+  411  python3 pi.py
+  412  nano pi.py
+  413  python3 pi.py
+  414  nano pi.py
+  415  python3 pi.py
+  416  nano pi.py
+  417  python3 pi.py
+  418  nano pi.py
+  419  python3 pi.py
+  420  nano pi.py
+  421  python3 pi.py
+  422  nano pi.py
+  423  python3 pi.py
+  424  nano pi.py
+  425  python3 pi.py
+  426  nano pi.py
+  427  python3 pi.py
+  428  nano pi.py
+  429  python3 pi.py
+  430  nano pi.py
+  431  python3 pi.py
+  432  nano pi.py
+  433  clear
+  434  python 3
+  435  python3
+  436  clear
+  437  python 3
+  438  python3
+  439  nano lista.py
+  440  python3 lista.py
+  441  nano lista.py
+  442  python3 lista.py
+  443  nano lista.py
+  444  python3 lista.py
+  445  nano lista.py
+  446  python3 lista.py
+  447  nano lista.py
+  448  python3 lista.py
+  449  nano lista.py
+  450  python3 lista.py
+  451  nano lista.py
+  452  python3 lista.py
+  453  nano lista.py
+  454  python3 lista.py
+  455  nano lista.py
+  456  python3 lista.py
+  457  nano lista.py
+  458  python3 lista.py
+  459  nano lista.py
+  460  python3 lista.py
+  461  nano lista.py
+  462  python3 lista.py
+  463  nano lista.py
+  464  python3 lista.py
+  465  nano lista.py
+  466  python3 lista.py
+  467  nano lista.py
+  468  python3 lista.py
+  469  nano lista.py
+  470  python3 lista.py
+  471  nano lista.py
+  472  python3 lista.py
+  473  nano lista.py
+  474  python3 lista.py
+  475  nano lista.py
+  476  python3 lista.py
+  477  nano lista.py
+  478  python3 lista.py
+  479  nano lista.py
+  480  python3 lista.py
+  481  nano lista.py
+  482  python3 lista.py
+  483  nano lista.py
+  484  python3 lista.py
+  485  nano lista.py
+  486  python3 lista.py
+  487  nano lista.py
+  488  python3 lista.py
+  489  nano lista.py
+  490  python3 lista.py
+  491  nano lista.py
+  492  python3 lista.py
+  493  nano lista.py
+  494  python3 lista.py
+  495  nano lista.py
+  496  python3 lista.py
+  497  nano lista.py
+  498  python3 lista.py
+  499  nano lista.py
+  500  python3 lista.py
+  501  nano lista.py
+  502  python3 lista.py
+  503  nano lista.py
+  504  python3 lista.py
+  505  nano lista.py
+  506  python3 lista.py
+  507  nano lista.py
+  508  python3 lista.py
+  509  nano lista.py
+  510  python3 lista.py
+  511  nano lista.py
+  512  python3 lista.py
+  513  ejercicio.py python3
+  514  python3
+  515  lista.py
+  516  asteriscos.py
+  517  python asteriscos.py
+  518  python asterisco.py
+  519  python3 asterisco.py
+  520  python3 lista.py
+  521  clear
+  522  python3 palabras.py
+  523  nano palabras.py
+  524  python3 palabras.py
+  525  nano palabras.py
+  526  python3 palabras.py
+  527  nano palabras.py
+  528  python3 palabras.py
+  529  nano palabras.py
+  530  python3 palabras.py
+  531  nano palabras.py
+  532  python3 palabras.py
+  533  nano palabras.py
+  534  python3 palabras.py
+  535  nano palabras.py
+  536  python3 palabras.py
+  537  nano palabras.py
+  538  python3 palabras.py
+  539  nano palabras.py
+  540  python3 palabras.py
+  541  nano palabras.py
+  542  python3 palabras.py
+  543  nano palabras.py
+  544  python3 palabras.py
+  545  nano palabras.py
+  546  python3 palabras.py
+  547  nano palabras.py
+  548  python3 palabras.py
+  549  nano palabras.py
+  550  python3 palabras.py
+  551  nano palabras.py
+  552  python3 palabras.py
+  553  nano palabras.py
+  554  python3 palabras.py
+  555  nano palabras.py
+  556  python3 palabras.py
+  557  nano palabras.py
+  558  python3 palabras.py
+  559  nano palabras.py
+  560  python3 palabras.py
+  561  nano palabras.py
+  562  python3 palabras.py
+  563  nano palabras.py
+  564  python3 palabras.py
+  565  nano palabras.py
+  566  python3 palabras.py
+  567  nano palabras.py
+  568  python3 palabras.py
+  569  nano palabras.py
+  570  python3 palabras.py
+  571  o
+  572  python3 palabras.py
+  573  nano palabras.py
+  574  python3 palabras.py
+  575  nano palabras.py
+  576  python3 
+  577  nano palabras.py
+  578  python3 
+  579  python3 palabras.py
+  580  nano palabras.py
+  581  python3 palabras.py
+  582  nano palabras.py
+  583  python3 palabras.py
+  584  nano palabras.py
+  585  python3 palabras.py
+  586  nano palabras.py
+  587  python3 palabras.py
+  588  nano palabras.py
+  589  python3 palabras.py
+  590  nano palabras.py
+  591  python3 palabras.py
+  592  nano palabras.py
+  593  python3 palabras.py
+  594  nano palabras.py
+  595  python3 palabras.py
+  596  nano palabras.py
+  597  python3 palabras.py
+  598  nano palabras.py
+  599  python3 palabras.py
+  600  nano palabras.py
+  601  clear
+  602  nano listapalabras.py
+  603  nano invertir.py
+  604  nano listanumeros.py
+  605  python3 listanumeros.py
+  606  nano invertirlalo.py
+  607  python3 listapalabras.py
+  608  python3 listanumeros.py
+  609  nano invertir.py
+  610  nano decimal.py
+  611  python3 decimal.py
+  612  nano decimal.py
+  613  python3 decimal.py
+  614  nano decimal.py
+  615  python3 decimal.py
+  616  nano decimal.py
+  617  python3 decimal.py
+  618  nano decimal.py
+  619  python3 decimal.py
+  620  nano decimal.py
+  621  python3 listapalabras.py
+  622  python3 invertir.py
+  623  nano invertir.py
+  624  python3 listanumeros.py
+  625  nano listanumeros.py
+  626  nano invertir.py
+  627  python3 invertir.py
+  628  nano invertir.py
+  629  python3 invertir.py
+  630  nano invertir.py
+  631  python3 invertir.py
+  632  nano invertir.py
+  633  python3 invertir.py
+  634  nano invertir.py
+  635  python3 invertir.py
+  636  nano invertir.py
+  637  python3 invertir.py
+  638  nano invertir.py
+  639  python3 invertir.py
+  640  nano invertir.py
+  641  python3 invertir.py
+  642  nano invertir.py
+  643  python3 invertir.py
+  644  nano invertir.py
+  645  python3 invertir.py
+  646  nano invertir.py
+  647  python3 invertir.py
+  648  nano invertir.py
+  649  python3 invertir.py
+  650  nano invertir.py
+  651  python3 invertir.py
+  652  nano invertir.py
+  653  python3 invertir.py
+  654  nano invertir.py
+  655  python3 invertir.py
+  656  nano invertir.py
+  657  python3 invertir.py
+  658  nano invertir.py
+  659  python3 invertir.py
+  660  nano invertir.py
+  661  python3 invertir.py
+  662  nano invertir.py
+  663  python3 invertir.py
+  664  nano invertir.py
+  665  python3 invertir.py
+  666  nano invertir.py
+  667  python3 invertir.py
+  668  nano invertir.py
+  669  python3 invertir.py
+  670  nano invertir.py
+  671  python3 invertir.py
+  672  nano invertir.py
+  673  python3 invertir.py
+  674  nano invertir.py
+  675  python3 invertir.py
+  676  nano invertir.py
+  677  python3 invertir.py
+  678  nano invertir.py
+  679  python3 invertir.py
+  680  nano invertir.py
+  681  python3 invertir.py
+  682  nano invertir.py
+  683  python3 invertir.py
+  684  nano invertir.py
+  685  python3 invertir.py
+  686  nano invertir.py
+  687  python3 invertir.py
+  688  nano invertir.py
+  689  python3 invertir.py
+  690  nano invertir.py
+  691  python3 invertir.py
+  692  nano invertir.py
+  693  python3 invertir.py
+  694  nano invertir.py
+  695  python3 invertir.py
+  696  clear
+  697  nano calculadora.py
+  698  python3
+  699  nano suma.py
+  700  python3
+  701  nano calculadora.py
+  702  python3
+  703  nano calculadora.py
+  704  python3
+  705  nano calculadora.py
+  706  python3
+  707  nano calculadora.py
+  708  python3
+  709  nano calculadora.py
+  710  python3
+  711  nano rec.py
+  712  python3
+  713  nano rec.py
+  714  666
+  715  55555555555555555555555555555555555555555555
+  716  5*5
+  717  python3
+  718  nano rec.py
+  719  nano calculadora.py
+  720  python3
+  721  nano calculadora.py
+  722  python3
+  723  nano calculadora.py
+  724  python3
+  725  nano calculadora.py
+  726  python3
+  727  nano calculadora.py
+  728  python3
+  729  nano calculadora.py
+  730  python3
+  731  nano calculadora.py
+  732  python3
+  733  nano calculadora.py
+  734  nano invertir.py
+  735  nano Cuento.tex
+  736  python3 calculadoramenu.py
+  737  clear
+  738  nano calculadoramenu.py
+  739  python3 calculadoramenu.py
+  740  python3
+  741  nano calculadoramenu.py
+  742  python3
+  743  nano calculadoramenu.py
+  744  python3
+  745  nano apuntes.tex
+  746  pdflatex apuntes.tex
+  747  evince apuntes.pdf
+  748  python3
+  749  nano calculadoramenu.py
+  750  python3
+  751  nano calculadoramenu.py
+  752  python3
+  753  nano apuntes.tex
+  754  pdflatex apuntes.tex
+  755  evince apuntes.pdf
+  756  nano apuntes.tex
+  757  pdflatex apuntes.tex
+  758  evince apuntes.pdf
+  759  python3
+  760  nano calculadoramenu.py
+  761  python3
+  762  nano calculadoramenu.py
+  763  python3
+  764  nano apuntes.tex
+  765  pdflatex apuntes.tex
+  766  evince apuntes.pdf
+  767  python3
+  768  nano calculadoramenu.py
+  769  nano calculadora.py
+  770  python3
+  771  nano calculadora.py
+  772  nano calculadoramenu1.py
+  773  nano calculadoramenu.py
+  774  nano calculadoramenu1.py
+  775  nano calculadoramenu.py
+  776  python3
+  777  nano calculadoramenu.py
+  778  python3
+  779  nano calculadoramenu.py
+  780  python3
+  781  nano calculadoramenu.py
+  782  nano apuntes.tex
+  783  evince apuntes.pdf
+  784  clear
+  785  nano orden.py
+  786  python3 orden.py
+  787  nano orden.py
+  788  python3 orden.py
+  789  nano orden.py
+  790  python3 
+  791  nano orden.py
+  792  python3 
+  793  nano orden.py
+  794  python3 
+  795  nano orden.py
+  796  python3 
+  797  nano orden.py
+  798  python3 
+  799  nano orden.py
+  800  python3 
+  801  nano orden.py
+  802  python3 
+  803  nano orden.py
+  804  python3 
+  805  nano orden.py
+  806  python3 
+  807  nano orden.py
+  808  python3 
+  809  nano orden.py
+  810  python3 
+  811  nano orden.py
+  812  python3 
+  813  nano orden.py
+  814  python3 
+  815  nano orden.py
+  816  python3 
+  817  nano orden.py
+  818  python3 
+  819  nano orden.py
+  820  python3 
+  821  nano orden.py
+  822  python3 
+  823  nano orden.py
+  824  python3 
+  825  nano orden.py
+  826  python3 
+  827  nano orden.py
+  828  python3 
+  829  nano orden.py
+  830  python3 
+  831  nano orden.py
+  832  python3 
+  833  nano orden.py
+  834  python3 
+  835  nano orden.py
+  836  python3 
+  837  hola.html
+  838  cd Documentos
+  839  hola.html
+  840  cd web
+  841  cd..
+  842  cd.
+  843  clear
+  844  cd web
+  845  cd Web
+  846  cd WEB
+  847  nano hola.html
+  848  nano orden.py
+  849  python 3
+  850  python3
+  851  nano orden.py
+  852  python3
+  853  nano orden.py
+  854  python3
+  855  nano orden.py
+  856  nano hola.html
+  857  nano orden.py
+  858  nano hola.html
+  859  python3
+  860  nano examen.py
+  861  python3 examen.py
+  862  nano examen.py
+  863  python3 examen.py
+  864  nano examen.py
+  865  python3 examen.py
+  866  nano examen.py
+  867  python3 examen.py
+  868  nano examen.py
+  869  python3 examen.py
+  870  nano examen.py
+  871  python3 examen.py
+  872  nano examen.py
+  873  python3 examen.py
+  874  nano examen.py
+  875  python3 examen.py
+  876  nano examen.py
+  877  python3 examen.py
+  878  nano examen.py
+  879  python3 examen.py
+  880  nano examen.py
+  881  python3 examen.py
+  882  python3
+  883  nano examen.py
+  884  python3
+  885  nano examen.py
+  886  python3
+  887  claer
+  888  clear
+  889  python3
+  890  clear
+  891  python3
+  892  nano examen.py
+  893  python3
+  894  nano examen.py
+  895  python3
+  896  clear
+  897  nano hola.html
+  898  nano suma.html
+  899  ls
+  900  uname -a
+  901  file bin/bash
+  902  ls -l
+  903  filw
+  904  file
+  905  file /bin/bash
+  906  ls -l /bin/bash
+  907  touch /tmp/algo
+  908  ls -l /tmp/algo
+  909  chmod 700 /tmp/algo
+  910  ls -l /tmp/algo
+  911  chmod 751 /tmp/algo
+  912  ls -l /tmp/algo
+  913  /tmp/algo
+  914  python
+  915  echo $PATH
+  916  set
+  917  pwd
+  918  cd /tmp
+  919  ./algo
+  920  ../tmp/algo
+  921  python programa1.py
+  922  python /tmp/py1.py
+  923  man bash
+  924  man tooch
+  925  man touch
+  926  ./tmp/algo
+  927  ../tmp/algo
+  928  ./tmp/algo
+  929  cd
+  930  ls
+  931  python triangulo.py
+  932  clear
+  933  set
+  934  cd /tmp
+  935  eyes
+  936  yes
+  937  cd /tmp
+  938  cd
+  939  cd home
+  940  cd /bin
+  941  ls
+  942  cd
+  943  ls
+  944  ls /home
+  945  ls /root
+  946  ls /lib
+  947  echo PATH
+  948  set
+  949  set | less
+  950  less host name
+  951  less hostname
+  952  file hostname
+  953  file *
+  954  file /tmp/*
+  955  cd utc
+  956  ucd
+  957  cd ucd
+  958  cd
+  959  ip a
+  960  su -
+  961  git init
+  962  git config --global user.mail "saturaderketzer@gmailo.com"
+  963  git config --global user.mail "saturaderketzer@gmail.com"
+  964  git config --global user.name "316060064"
+  965  git init
+  966  make dir thc
+  967  dir thc
+  968  mkdir THC
+  969  cd THC
+  970  git init
+  971  ls
+  972  ls -l
+  973  ls
+  974  git clone https://github.com/316060064/Taller-de-herramientas-computacionales.git
+  975  git status
+  976  git status}
+  977  git status
+  978  git add *
+  979  git commit
+  980  git config --global user.email "saturaderketzer@gmail.com"
+  981  git config --global user.name "316060064"
+  982  git add
+  983  git status
+  984  git add
+  985  git commit
+  986  git add *
+  987  git commit
+  988  git status
+  989  git push
+  990  git status
+  991  ls
+  992  cd Taller-de-herramientas-computacionales/
+  993  ls
+  994  git status
+  995  git add *
+  996  git commit
+  997  git push
+  998  cd THC
+  999* ls 
+ 1000  cd Taller-de-herramientas-computacionales/
+ 1001  cd
+ 1002  cd THC
+ 1003  cd Taller-de-herramientas-computacionales/
+ 1004  ls
+ 1005  file * README.md
+ 1006  ls -la
+ 1007  ls
+ 1008  cd
+ 1009  less
+ 1010  ls
+ 1011  ls -la
+ 1012  less .gitconfig
+ 1013  cd THC
+ 1014  cd Taller-de-herramientas-computacionales/
+ 1015  cd
+ 1016  less .gitconfig
+ 1017  cd /THC
+ 1018  cd THC
+ 1019  cd Taller-de-herramientas-computacionales/
+ 1020  gedit
+ 1021  vi
+ 1022  ls
+ 1023  vi
+ 1024  vi README.md
+ 1025  cat README.md
+ 1026  git status
+ 1027  git add *
+ 1028  git status
+ 1029  git commit+
+ 1030  git commit
+ 1031  ls
+ 1032  mkdir -p Clases/Latex
+ 1033  ls Clases/
+ 1034  cd /tmp/
+ 1035  ls Clases/Latex/
+ 1036  ls /Este/Es/Un/Directorio/Anidado
+ 1037  mkdir /Este/Es/Un/Directorio/Anidado
+ 1038  mkdir /Este
+ 1039  mkdir Este/
+ 1040  mkdir Este/Es
+ 1041  mkdir Este/Es/Un
+ 1042  mkdir Este/Es/Un/Archivo
+ 1043  mkdir Este/Es/Un/Archivo/Anidado
+ 1044  mkdir -p este/es/un/archivo/anidado
+ 1045  ls
+ 1046  cd
+ 1047  cd THC
+ 1048  cd Taller-de-herramientas-computacionales/
+ 1049  mkdir Clases/Programas
+ 1050  ls
+ 1051  ls Clases
+ 1052  vi Clases/Latex/03.txt
+ 1053  git add *
+ 1054  git status
+ 1055  git commit
+ 1056  git push
+ 1057  history
+ 1058  history > Clases/Latex/comandos03.txt
