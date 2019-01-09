@@ -1,0 +1,12 @@
+Pasos para crear un repositorio en Linux:
+1.-Crear un directorio con mkdir Directorio
+2.- cd /Directorio  ir a la carpeta
+3.-$ git config --global user.mail "correoelectronico@dominio.com.mx" Configura el correo electronico de la cuenta de github
+4.-$ git config --global user.name "usuario" configura el usuario de github
+5.-$ git init   
+5.-$ git clone "Url"
+6.-$ git status (Es opcional, para verificar cambios no actualizados)
+7.-$ git add *
+8.-$ git commit   Para salir del editor del comentario dar Esc luego :wq
+9.- Teclear usuario y dar enter
+10.-Teclear la contraseña y dar enter
