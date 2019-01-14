@@ -1,0 +1,60 @@
+\documentclass[letterpaper, 12pt, oneside]{article}%especificaciones del documento
+\usepackage{amsmath}%paquete para escribir expresiones matemámaticas
+\usepackage{graphicx}%paquete para poder incluír imagenes en el documento
+\usepackage{xcolor} %paquete de LaTex para poder poner otro texto
+\graphicspath{{Imagenes/}}%directorio de la imagen, este lo cambian por el directorio en el que ustedes guardaron su imagen 1.png
+\usepackage[utf8]{inputenc} %para poder poner acentos0
+
+	\title{\Huge Taller de Herramientas Computacionales}
+	%\title{\Huge \colorbox{magenta}{Taller de Herramientas computacionales}} %De esta forma con colorbox pone el texto dentro de una "caja" de color.
+	\author{Josué Artemio Hernández Rodríguez}%autor del escrito
+	\date{07/01/19}%fecha del escrito
+
+\begin{document}%inicia el documento
+\maketitle
+%\vfill %Para rellenar el espacio y colocar hasta abajo de la pagina el siguiente texto, imagen.
+\begin{center}%inicia centrado
+\includegraphics[scale=0.2]{2.png}%del lado izquierdo se muestra el tamaño de la imagen, del derecho se escribe el nombre de la imagen a incluir en el texto
+\end{center}%termina el centrado para la imagen
+\newpage%crea una nueva página
+
+\title{\Huge Introducción al curso\\}%titulo2 \\ sirven para saltar una linea.
+
+Lo que vimos en clase fue:%letras de color azul
+\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\item Distribuciones de Linux: %item sirve enlistar el elemento, este es el primer elemento enumerado.
+	\begin{enumerate}%Inicia otro enlistado dentro del listado anterior.
+		\item Fedora
+		\item Linux
+		\item Ubuntu
+	\end{enumerate}%finaliza el enlistado.
+	\item Comandos de Bash%Segundo elemento enumerado.
+	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
+		\item set
+		\item cd: nos dirige a un directorio
+		\item mkdir: Crea un directorio
+		\item mkdir -p Crea un arbol de directorios
+		\item ls: Muestra información de un archivo o directorio especifico, pero si agregamos -l muestra permisos
+		\item File: Nos dice tipo de archivo es
+		\item uname-a: Nos dice que arquitectura es nuestro sistema, muy util para saber si estamos aprovechando las ventajas de un CPU X64
+		\item cmod "   ": Modifica los permisos de un archivo o directorio en especifico
+				
+	\end{itemize}%finaliza enlistado con itemize
+	\item Como vamos a trabaar en el curso
+		\begin{itemize}
+			\item Libro de python disponible en la bibliografia de la materia, y gratuito en www.bibliotecas.unam.mx
+			\item Resumenes de las clases en LaTeX
+			\item Examenes cada viernes
+			\item Ver en que aplicar lo aprendido
+		\end{itemize}
+	\item \textbf{Tarea}
+	\\
+	\textbf{Verificar todos los comandos}
+	
+	
+	
+\end{enumerate}%finaliza el enlistado principal
+	
+
+
+\end{document}%termina el documento

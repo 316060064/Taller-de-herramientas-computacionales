@@ -1,0 +1,67 @@
+\documentclass[letterpaper, 12pt, oneside]{article}%especificaciones del documento
+\usepackage{amsmath}%paquete para escribir expresiones matemámaticas
+\usepackage{graphicx}%paquete para poder incluír imagenes en el documento
+\usepackage{xcolor} %paquete de LaTex para poder poner otro texto
+\graphicspath{{Imagenes/}}%directorio de la imagen, este lo cambian por el directorio en el que ustedes guardaron su imagen 1.png
+\usepackage[utf8]{inputenc} %para poder poner acentos0
+
+	\title{\Huge Taller de Herramientas Computacionales}
+	%\title{\Huge \colorbox{magenta}{Taller de Herramientas computacionales}} %De esta forma con colorbox pone el texto dentro de una "caja" de color.
+	\author{Josué Artemio Hernández Rodríguez}%autor del escrito
+	\date{08/01/19}%fecha del escrito
+
+\begin{document}%inicia el documento
+\maketitle
+%\vfill %Para rellenar el espacio y colocar hasta abajo de la pagina el siguiente texto, imagen.
+\begin{center}%inicia centrado
+\includegraphics[scale=0.2]{2.png}%del lado izquierdo se muestra el tamaño de la imagen, del derecho se escribe el nombre de la imagen a incluir en el texto
+\end{center}%termina el centrado para la imagen
+\newpage%crea una nueva página
+
+\title{\Huge Clase en laboratorio\\}%titulo2 \\ sirven para saltar una linea.
+
+Lo que vimos en clase fue:%letras de color azul
+\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+		\begin{itemize}
+			\item bash: Define la forma en como esta funcionando el sistema
+			\item Path : Ruta donde va buscar los binarios
+			\item Tigervnc: Sirve para mirar remotamente la pantalla o área de trabajo de otra PC en la misma red
+			\item github: Pagina de alojamiento y servicio de repositorios de git
+			\item git: Cliente de github para fedora (linux) el cual usaremos para mantener actualizado al dia los repositorios en la nube
+		
+		\end{itemize}
+	
+	\item Comandos de Bash%Segundo elemento enumerado.
+	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
+		\item file /tmp/* Muestra que tipo de archivos hay en esa ruta
+		\item set | less : Muestra paginando el contenido, para pasar a la pagina siguiente se oprime "RePág" o retrocede con "AvPág"
+		
+				
+	\end{itemize}%finaliza enlistado con itemize
+	\item Còmo instalar y configurar tigervnc
+		\begin{enumerate}
+			\item En la terminal, escribir "dnf install tygervnc" y esperar que se instale tigervnv
+			\item Escribir la ip: "192.168.13.125"
+		\end{enumerate}
+	\item Còmo instalar y configurar git
+		\begin{enumerate}
+			\item Teclear en la terminal "sudo yum install git", esperar a que se instalen los paquetes necesarios...
+			\item Teclear  git config --global user.email "tuemail@dominio.com"
+			\item Teclear  git config --global user.name "tuusuario"      
+			\item Teclear  git init
+			\item Teclear  git clone "url
+			\item Teclear git add *
+			\item Teclear git commit (Se escribe un comentario sobre lo que hicimos, para salir se sigue esta secuencias: ESC, :wq)
+			\item Escribir el usuario de github
+			\item Escribir la contraseña
+		\end{enumerate}
+	
+	
+	
+	
+\end{enumerate}%finaliza el enlistado principal
+	
+
+
+\end{document}%termina el documento

@@ -1,0 +1,78 @@
+\documentclass[letterpaper, 12pt, oneside]{article}%especificaciones del documento
+\usepackage{amsmath}%paquete para escribir expresiones matemámaticas
+\usepackage{graphicx}%paquete para poder incluír imagenes en el documento
+\usepackage{xcolor} %paquete de LaTex para poder poner otro texto
+\graphicspath{{Imagenes/}}%directorio de la imagen, este lo cambian por el directorio en el que ustedes guardaron su imagen 1.png
+\usepackage[utf8]{inputenc} %para poder poner acentos0
+
+	\title{\Huge Taller de Herramientas Computacionales}
+	%\title{\Huge \colorbox{magenta}{Taller de Herramientas computacionales}} %De esta forma con colorbox pone el texto dentro de una "caja" de color.
+	\author{Josué Artemio Hernández Rodríguez}%autor del escrito
+	\date{13/01/19}%fecha del escrito
+
+\begin{document}%inicia el documento
+\maketitle
+%\vfill %Para rellenar el espacio y colocar hasta abajo de la pagina el siguiente texto, imagen.
+\begin{center}%inicia centrado
+\includegraphics[scale=0.2]{2.png}%del lado izquierdo se muestra el tamaño de la imagen, del derecho se escribe el nombre de la imagen a incluir en el texto
+\end{center}%termina el centrado para la imagen
+\newpage%crea una nueva página
+
+\title{\huge Preguntas: Semana 1\\}%titulo2 \\ sirven para saltar una linea.
+
+La semana se resume en las siguientes preguntas:%letras de color azul
+\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\item Menciona las distribuciones de linux que conozcas \\
+	 Fedora, ubuntu, mint	
+	
+	\item ¿Cómo se llama el elemento que parpadea en la pantalla de la terminal?\\
+	Pront
+	\item ¿Cómo haces para ir a Home directamente en la terminal?\\
+	Usando el comando cd
+	\item ¿A qué se refiere esta linea de comando "file /bin/bash?\\
+	Muestra la informacion del archivo bash
+	\item ¿Como haces para saber que arquitectura es la distribución de inuz que estas usando?\\
+	Con el comando uname -a
+	\item ¿Si tienes una duda, como abres el manual de un comando en especifico?\\
+	Con man seguido del comando que quiero saber utilizar
+	\item ¿Qué es un ssh?\\
+	Es un interprete de comandos seguros
+	\item ¿Qué es Bash?\\
+	Define la forma en como esá funcionando el sistema
+	
+	\item ¿Cómo instalas tigervnc y para que sirve?\\
+	Con el comando "dnf yum install tigervnc" y sirve para ver remotamente en mi pantalla lo que se trasmite desde otra desde la misma red.
+	\item ¿Para qué sirve git pull?\\
+	Para obtener una actualizacion de mis datos alojados en mi ciente de github y asi evitar inconsistencias
+	
+	\item Menciona dos o mas editores de texto en Linux que conozcas\\
+	vi, nano, y gedit
+	\item ¿Cómo haces para crear un árbol de directorio en una sola linea de comando?\\
+	Con mkdir -p seguido de la rama de directorios a crear
+	\item ¿Como guardas el historial de la terminal?\\
+	Con \$ history > Carpeta/Subcarpeta/Comandos.txt
+	\item ¿Qué es idle?\\
+	Es un IDE, que quiere decir entorno de desarrollo integrado, y sirve para crear un script de instrucciones para python
+	
+	\item ¿Cómo realizas comentarios en python?\\
+	Con \# y con '''  '''
+	\item Si tienes una variable con una cadena, ¿cómo haces para mostrar su contenido con print?\\
+	Debo poner print '\%s' \%(c1) donde c1 es otra variable especificada
+	\item ¿Qué son los modulos de python?\\
+	Son bibliotecas de funciones
+	\item ¿En python a que se refiere \%g o  \%f, \%e o \%E, y \%d?\\
+	En primera instancia, \% denota que se va sustituir por el valor de una variable ya definida por el ususario, y \%g o  \%f se refieren a que se va expresar en flotante en su formato mas corto o simplemente como un flotante; \%e o \%E se refiere a que se va sustituir por una variable y se expresara en formato científico, y la diferencia radica en que se expresara con minisucula o mayusculo a consideración del usuario; y \%d se refiere a que se expresara como un entero.
+	\item En TeXstudio, menciona como especificas el tipo de documento que vas a realizar y parametros de formato\\
+	Con documentclass[parametros]\{tipo\}
+	\item Menciona el paquete que tienes que usar para poder incluir imagenes en el documento en TeXstudio\\
+	Se utiliza el paquete usepackage\{graphicx\} y ya que vas a colocar la imagen se escribe includegraphics[parametros]\{nombrearchivo.png\}
+	\item ¿Cómo instalas TeXstudio?\\
+	Desde la terminal escribo en el pront \$ dnf install texstudio
+	
+	
+	
+	
+\end{enumerate}%finaliza el enlistado principal
+
+
+\end{document}%termina el documento
