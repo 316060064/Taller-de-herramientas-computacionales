@@ -1,0 +1,71 @@
+\documentclass[letterpaper, 12pt, oneside]{article}%´
+\usepackage{amsmath}%paquete para escribir expresiones matemámaticas
+\usepackage{graphicx}%paquete para poder incluír imagenes en el documento
+\usepackage{xcolor} %paquete de LaTex para poder poner otro texto
+\graphicspath{{Imagenes/}}%directorio de la imagen, este lo cambian por el directorio en el que ustedes guardaron su imagen 1.png
+\usepackage[utf8]{inputenc} %para poder poner acentos
+
+	\title{\Huge Taller de Herramientas Computacionales}
+	%\title{\Huge \colorbox{magenta}{Taller de Herramientas computacionales}} %De esta forma con colorbox pone el texto dentro de una "caja" de color.
+	\author{Josué Artemio Hernández Rodríguez}%autor del escrito
+	\date{14/01/19}%fecha del escrito
+
+\begin{document}%inicia el documento
+\maketitle
+%\vfill %Para rellenar el espacio y colocar hasta abajo de la pagina el siguiente texto, imagen.
+\begin{center}%inicia centrado
+\includegraphics[scale=0.2]{2.png}%del lado izquierdo se muestra el tamaño de la imagen, del derecho se escribe el nombre de la imagen a incluir en el texto
+\end{center}%termina el centrado para la imagen
+\newpage%crea una nueva página
+
+\title{\Huge Algoritmos de Python\\}%titulo2 \\ sirven para saltar una linea.
+
+Lo que vimos en clase fue:%letras de color azul
+\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+		\begin{itemize}
+			\item Un algoritmo es un conjunto finito de instrucciones para resolver un problema especifico.
+			\item La diferencia de una igualdad y una asignacion es que una se puede despejar y la otra no.			
+			\item Los dos puntos despues de un if, denota un bloque
+			\item Con "flavors" nos referimos a diferentes versiones de una distribución de linux, que en el mayor de los casos son mas ligeras y aptas para computadoras menos potentes
+			
+		\end{itemize}
+	
+	\item Comandos de python%Segundo elemento enumerado.
+	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
+		\item if Es una condición, aquí van las órdenes que se ejecutan si la condición es cierta
+		y que pueden ocupar varias líneas
+		\item else Aquí van las órdenes que se ejecutan si la condición if es falsa y que también pueden ocupar varias líneas
+		\item return: Esta sentencia incluye un valor de retorno. Esta sentencia significa: “Retorne inmediatemente de esta función y use la siguiente expresión como un valor de retorno”
+		\item echo muestra el resultado del calculo que hizo
+		\item def nos dice que comienza una función o modulo
+		
+		
+				
+	\end{itemize}%finaliza enlistado con itemize
+	\item Algunas flavors de linux son:
+		\begin{itemize}
+			\item KDE Desktop
+			\item XFCE Desktop
+			\item LXQT Desktop
+			\item Cinnamon
+			\item LXDE Desktop (apta para PC's antiguas)
+		\end{itemize}
+	\item Que hicimos en clase... \\
+	\\
+	Vimos como es un proceso de asignacion en python y como se diferencia con una igualdad. En una asignacion puede volverse iteractivo, en un numero finito de pasos para resolver un problema especifico, en el caso de la clase de hoy fue aproximar el area de un paralelogramo de lado x * 1 con el de area de un cuadrado de lado $\sqrt{x}$
+	\item \textbf{Tarea}
+		\begin{itemize}
+			\item Definir una función para resolver el ejercicio del circulo, con ayuda de las sentencias if, else, while.
+			\item Realizar un resumen de la clase en LaTeX
+		
+			
+		\end{itemize}
+	
+		
+	
+\end{enumerate}%finaliza el enlistado principal
+	
+
+
+\end{document}%termina el documento
