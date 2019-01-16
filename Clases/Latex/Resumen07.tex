@@ -1,0 +1,104 @@
+\documentclass[letterpaper, 12pt, oneside]{article}%´
+\usepackage{amsmath}%paquete para escribir expresiones matemámaticas
+\usepackage{graphicx}%paquete para poder incluír imagenes en el documento
+\usepackage{xcolor} %paquete de LaTex para poder poner otro texto
+\graphicspath{{Imagenes/}}%directorio de la imagen, este lo cambian por el directorio en el que ustedes guardaron su imagen 1.png
+\usepackage[utf8]{inputenc} %para poder poner acentos
+\usepackage{listings}
+
+\title{\Huge Taller de Herramientas Computacionales}
+%\title{\Huge \colorbox{magenta}{Taller de Herramientas computacionales}} %De esta forma con colorbox pone el texto dentro de una "caja" de color.
+\author{Josué Artemio Hernández Rodríguez}%autor del escrito
+\date{15/01/19}%fecha del escrito
+
+\begin{document}%inicia el documento
+	\maketitle
+	%\vfill %Para rellenar el espacio y colocar hasta abajo de la pagina el siguiente texto, imagen.
+	\begin{center}%inicia centrado
+		\includegraphics[scale=0.2]{2.png}%del lado izquierdo se muestra el tamaño de la imagen, del derecho se escribe el nombre de la imagen a incluir en el texto
+	\end{center}%termina el centrado para la imagen
+	\newpage%crea una nueva página
+	
+	\title{\Huge Funciones para recolver problemas en python\\}%titulo2 \\ sirven para saltar una linea.
+	
+	Lo que vimos en clase fue:%letras de color azul
+	\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+		\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+		\begin{itemize}
+			\item Partes globales son: definir valores iniciales, parte que procesa la información, y parte del resultado.	
+			\item La diferencia dentre if y while es que if se realiza una vez y while 0 o más veces		
+			\item Python sirve para realizar calculo simbolico y numerico
+			\item Tex se encarga de organizar un documento, y LaTeX es una herramienta de creación de documentos
+		\end{itemize}
+		
+		\item Comandos de python%Segundo elemento enumerado.
+		\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
+			\item while : Es un bucle qie mientras la condicion no se cumpla sigue ejecutandose hasta que sea verdadero
+			\item if : Condicional que si es verdadero ejecuta
+			\item a = 5 : Es una asignación
+			\item a == 5 : Es de comparación
+			
+			
+			
+		\end{itemize}%finaliza enlistado con itemize
+		\item Comandos de LaTeX
+		\begin{itemize}
+			\item  
+			\begin{lstlisting}  
+\section{} 
+			\end{lstlisting} Abre una sección nueva con un número
+			\item 
+			\begin{lstlisting}  
+\section*{}
+			\end{lstlisting} Abre una sección nueva sin número
+			\item 
+			\begin{lstlisting}  
+$\alpha + \beta$\\ %\[  \]
+\[\alpha + \beta\] 
+			\end{lstlisting} Nos ayudan a representar las letras que representan a alpha y beta\\
+			
+			\begin{lstlisting}  
+$x_{2}$
+$x^{2}$
+			\end{lstlisting}  Representa un subindice e indice respectivamente
+			\item 
+			\begin{lstlisting}  
+$\frac{2}{3}$\\
+$\frac{\frac{3}{4}}{\frac{2}{3}}$
+			\end{lstlisting} Nos ayudan a representar fracciones e dos formatos distintos.
+			\item
+			\begin{lstlisting}  
+$\sqrt{2} 
+ \sqrt{3^2}^2$
+			\end{lstlisting} Expresan raiz cuadrada de un numero y la otra la raiz cuadrada elevada a una potencia, en este caso 2
+			\item
+			\begin{lstlisting} 
+$\int_{a}^{b} x^2$
+			\end{lstlisting} Expresa la integral de "a" a "b", cuando x esta elevada al cuadrado
+			\item
+			\begin{lstlisting}  
+$\partial x^2$
+			\end{lstlisting} La parcial de x al cuadrado
+			\item
+			\begin{lstlisting} 
+$3\quad 2$ 			
+			\end{lstlisting} Coloca un espacio entre el 3 y el 2
+			\item
+			\begin{lstlisting} 
+\usepackage{listings}			
+			\end{lstlisting} Este paquete nos permite colocar código de programacion en nuestro texto
+			
+			
+			
+			
+			
+		\end{itemize}
+		
+		
+		
+		
+	\end{enumerate}%finaliza el enlistado principal
+	
+	
+	
+\end{document}%termina el documento
