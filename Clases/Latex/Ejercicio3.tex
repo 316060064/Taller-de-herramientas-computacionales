@@ -1,0 +1,85 @@
+\documentclass{book}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+%\usepackage{biblatex}
+\usepackage{hyperref}
+\usepackage{biblatex}
+
+\title{Taller de Herramientas Computacionales}
+\author{Josue Artemio Hernandez Rodriguez}
+\date{17/Enero/2019}
+
+
+\begin{document}
+\maketitle
+%Aqui inicia el indice de contenido del texto
+\tableofcontents
+\section*{Introducción} Este libro es para formalecer el conocimiento de la materia de herramientas computacionales.
+\url{www.google.com.mx}
+\hyperref[Google]{www.google.com.mx}
+
+\chapter{Uso Basico de Linux}
+\section{Distribuciones de Linux}
+\section{Comandos}
+\chapter{Introducción a Latex}
+\chapter{Introducción a Python}
+
+\begin{verbatim}
+#!/usr/bin/python2.7 
+# -*- coding: utf-8 -*-
+'''
+Josué Artemio Hernéndez Rodríguez, 316060064
+Taller de Herramientas Computacionales
+
+Le dimos atributos de ejecución a un programa de python y ademas dentro del código
+agregamos que interprete va utilizar
+'''
+
+x = 10.5;y = 1.0/3;z = 15.3
+#x,y,z = 10.5,1.0/3,15.3
+
+H = """
+El punto en R3 es:
+(x,y,z)=(%.2f,%g,%G)
+""" % (x,y,z)
+
+print H
+
+G="""
+El punto en R3 es:
+(x,y,z)=({laX:.2f},{laY:g},{laZ:G})
+""".format(laX=x,laY=y,laZ=z)
+
+print G
+
+
+import math as m
+from math import sqrt
+from math import sqrt as s
+from math import *  # no se recomienda
+x=16
+x = input("Cual es el valor al que le quieres\n" +
+" calcular la raiz: ")
+print "la raiz cuadrada de %.2f es %f" % (x,m.sqrt(x))
+print sqrt(16.5)
+print s(16.5)
+\end{verbatim}
+
+
+
+
+
+
+%Aqui inician los capitulos del libro
+\chapter{Introducción a Latex}
+\chapter{Introducción a Python}
+\section*{Orientacion a objetos}
+
+\begin{thebibliography}{9}
+	\bibitem{Computacion}
+	Autor blah blah blah
+	\textit{cualquier cosa}
+	blah blah blah 2019
+\end{thebibliography}
+	
+\end{document}
