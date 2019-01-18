@@ -1,0 +1,119 @@
+\documentclass[letterpaper, 12pt, oneside]{article}%´
+\usepackage{amsmath}%paquete para escribir expresiones matemámaticas
+\usepackage{graphicx}%paquete para poder incluír imagenes en el documento
+\usepackage{xcolor} %paquete de LaTex para poder poner otro texto
+\graphicspath{{Imagenes/}}%directorio de la imagen, este lo cambian por el directorio en el que ustedes guardaron su imagen 1.png
+\usepackage[utf8]{inputenc} %para poder poner acentos
+\usepackage{listings}
+
+\title{\Huge Taller de Herramientas Computacionales}
+%\title{\Huge \colorbox{magenta}{Taller de Herramientas computacionales}} %De esta forma con colorbox pone el texto dentro de una "caja" de color.
+\author{Josué Artemio Hernández Rodríguez}%autor del escrito
+\date{17/01/19}%fecha del escrito
+
+\begin{document}%inicia el documento
+	\maketitle
+	%\vfill %Para rellenar el espacio y colocar hasta abajo de la pagina el siguiente texto, imagen.
+	\begin{center}%inicia centrado
+		\includegraphics[scale=0.2]{2.png}%del lado izquierdo se muestra el tamaño de la imagen, del derecho se escribe el nombre de la imagen a incluir en el texto
+	\end{center}%termina el centrado para la imagen
+	\newpage%crea una nueva página
+	
+	\title{\Huge Resolviendo problemas con Python\\}%titulo2 \\ sirven para saltar una linea.
+	
+	Lo que vimos en clase fue:%letras de color azul
+	\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+		\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+		\begin{itemize}
+			\item Se pueden importar paquetes de sistema operativo a python, y de esta forma tener de forma clara en que directorio nos encontramos, o movernos de directorio si es necesario. Esto nos sirve para movernos donde esta un modulo en especifico y asi importar una función.
+			\item Cuando se necesite cambiar el valor de una variable a otra, es de suma importancia usar un auxiliar para que el valor que tenia antes no se pierda.	
+
+		\end{itemize}
+		
+		\item Código en python%Segundo elemento enumerado.
+		\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
+			\item r != 0: Nos dice que si r es diferente de cero.
+			\item a\%b = c : El operador modulo nos da como resultado el residuo de la división.
+			\item from math import sihn, exp, e, pi : del modulo math nos importa las variables que estan separadas por comas
+			\item from os import getcwd as pwd, listdir as ls, chdir as cd : Nos importa del sistema operativo los comandos separados por comas, y los renombra con pwd, ls y cd.
+		
+			
+			
+			
+		\end{itemize}%finaliza enlistado con itemize
+		\item Código de LaTeX
+		\begin{itemize}
+			\item 
+			\begin{lstlisting}
+\documentclass{book}
+			\end{lstlisting} Es un tipo de documento distinto, es usual para redactar un libro.
+			\item  
+			\begin{lstlisting}  
+\usepackage{biblatex}
+			\end{lstlisting} Este paquete nos sirve para poder incluir bibliografia en nuestro documento. 
+			\item 
+			\begin{lstlisting}  
+\usepackage[spanish]{babel}
+			\end{lstlisting} Le aplica el idioma español a nuestras secciones, titulos, subtitulos, etc. 
+			\item 
+			\begin{lstlisting}  
+\begin{array}{|v|v|v|}
+
+\end{array}
+			\end{lstlisting} Sirve para tabular tablas\\
+			
+			\begin{lstlisting}  
+\hline  o \hline "texto" \hline
+			\end{lstlisting}  Dibuja lineas horizontales a nuestra tabla, si se coloca el texto entre dos de esta lineas se cierra la tabla
+			\item 
+			\begin{lstlisting}  
+"Texto" & "texto & "texto"
+			\end{lstlisting} Las separaciones con \& sirve para señalar que el texto es parte de otra columna.
+			\item
+			\begin{lstlisting}  
+\mbox{texto}
+			\end{lstlisting} Nos coloca una caja de texto, muy util en las tablas.
+			\item
+			\begin{lstlisting} 
+\begin{align}      \begin{align*}
+               o     
+\end{align}         \end{align*}
+			\end{lstlisting} Sirve para alinear el texto en el centro, con asterico hace que no aparezca como listado
+			\item
+			\begin{lstlisting}  
+\tableofcontents
+			\end{lstlisting} Coloca un indice a nuestro documento
+			\item
+			\begin{lstlisting} 
+\url{www.google.com}
+\hyperref[Google]{www.google.com}			
+			\end{lstlisting} Nos ayudan a colocar una url o hibervinculo, la diferencia es que en la url nos da un acceso en el PDF, mientras que en hyperref solo nos coloca el texto.
+			\item
+			\begin{lstlisting} 
+\chapter{Capitulo}
+\section{seccion}		
+			\end{lstlisting} Hacemos referencia a que inicia un capítulo o  inicia una seccion dentro del mismo con "section"
+			\item
+			\begin{lstlisting} 
+\begin{thebibliography}{#}
+\bibitem{Libro}
+
+\end{thebibliography}		
+			\end{lstlisting} Nos sirve para agregar las referencias bibliograficas
+			\item
+			\begin{lstlisting} 
+\textit{text}		
+			\end{lstlisting} Nos pone el texto en italica
+			
+			
+			
+		\end{itemize}
+		
+		
+		
+		
+	\end{enumerate}%finaliza el enlistado principal
+	
+	
+	
+\end{document}%termina el documento

@@ -1,6 +1,5 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
-\select@language {spanish}
+\babel@toc {spanish}{}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Uso Basico de Linux}{5}{chapter.1}
 \defcounter {refsection}{0}\relax 
