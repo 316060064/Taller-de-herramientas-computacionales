@@ -1,0 +1,80 @@
+\documentclass[letterpaper, 12pt,oneside]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\graphicspath{{Imagenes/}}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+
+\title{\Huge Taller de Herramientas Computacionales}
+\author{Josue Artemio Hernandez Rodriguez}
+\date{18/Enero/2019}
+
+\begin{document}
+	\maketitle
+	\begin{center}
+		\includegraphics[scale=0.2]{2.png}
+	\end{center}
+
+	\newpage
+	
+	\title{\huge \textit{El uso de listas en Python}}\\
+	
+	El resumen del dia viernes 18 de Enero de 2019 abarca lo siguiente:
+	\begin{enumerate}
+		\item Conceptos
+			\begin{itemize}
+				\item Las listas en python son una herramienta muy interesante y potente que nos sirve para recolentar datos de manera robusta, estos datos adquieren la cualidad de objetos dentro de la lista.
+				\item La diferencia de posición e índice es que la posición es un número n del 1 a un numero fínito, y el índice es (n-1).
+			\end{itemize}
+		
+		\item Comandos de bash
+			\begin{itemize}
+				\item {\textit{idle ; emacs} }: El punto y coma separa comandos en bash, en este caso los comandos para abrir dos programas. No los abre juntos, si no que el segundo solo se abre al cerrarse el primero.
+				\item {\textit{idle \& emacs}} : La separacion de dos comandos con \& representa que ambos se ejecutan al mismo tiempo. A diferencia del anterior, uno no depende del otro.
+			\end{itemize}
+		
+		\item Código de python
+			\begin{itemize}
+				\item {\textit{type(cadena)}} : Type nos sirve para evaluar de que tipo es una variable, es decir, cadena, entero, flotante, etc.
+				\item {\textit{bool(cadena)}} : Evalua si una variable es booleano, si lo es regresa {\textit{True}}, si no lo es {\textit{False}}. Si es cero regresa False y si es diferente de cero True.
+				\item L = [] o L = [1.2.3.8.9] : Los corchetes repreentan una lista, la primera es una lista vacia, y la otra es una lista con los elemntos 1,2,3,8 y 9.
+				\item L.append : Agrega elementos despues del último elemento dentro de la lista con variabel "L".
+				\item len(L) : Nos dice de cuantos elementos esta conformada una lista.
+				\item L.insert(3,"otra cadena"): Nos dice que  en el índice 3 agrega el elemento "otra cadena".
+				\item L[3] : Nos muestra cual es el elemento con índice 3 dentro de la lista L
+				\item len(L[5]) : Nos dice cual es la longitud del elemento con índice 5  dentro de la cadena L. Seria trivial si fuera una lista de solo unos cuantos numeros, asi que es util si la lista contiene como elementos otras listas.
+				\item L.pop() : Saca un elemento de la lista L. Si no le especifico un índice dentro de () sacara el ultimo de la lista.
+				\item L.extend : Agrega elementos independientes a una lista
+				\item L[3] + L[len(L)-1] : Junta los elementos con indice 3 y el ultimo de la lista en uno solo, es decir si L[3]= ¿Cómo y L[len(L)-1] = estás?, entro de la lista L[1,2,3,"¿Cómo,45,62,"estás?"], nos da como resultado, "¿Cómoestás?"
+				\item 
+				\begin{lstlisting}
+archivoLatex = ['libro.tex', 'libro.log', 'libro.pdf']
+archivotex, archivolog, archivopdf = archivoLatex
+				\end{lstlisting} ArchivoLatex es una lista con los elementos 'libro.tex', 'libro.log', 'libro.pdf'. Pero "archivotex, archivolog, archivopdf = archivoLatex" lo que hace es asignarle una variable a cada uno de esos elementos dentro de la lista. Es decir, al escribir archivotex no regresara como resultado 'libro.tex'
+				\item 
+				\begin{lstlisting}
+for C in gradosC:
+	print 'Elemento de la lista: ', C
+				\end{lstlisting} Por cada indice en la lista gradosC, imprime "Elemento de la lista: + el elemento perteneciente a cada indice" 
+				\item 
+				\begin{lstlisting}
+print 'La lista C tiene: ',len(C), 'elementos'
+				\end{lstlisting} ~
+				
+			\end{itemize}
+	
+		
+	\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
