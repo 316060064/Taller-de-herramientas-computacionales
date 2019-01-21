@@ -1,3 +1,13 @@
+#!/usr/bin/python2.7
+# -*- coding: utf-8 -*-
+'''
+Josue Artemio Hernandez Rodriguez, 316060064
+Este programa te pide diez números, y a partir
+de estos de dice cual es el mayor, el menor y
+su promedio.
+'''
+
+
 def mayor(n1,n2,n3,n4,n5,n6,n7,n8,n9,n10):
     if n1 > n2 and n1>n3 and n1 > n4 and n1 >n5 and n1 > n6 and n1>n7 and n1 > n8 and n1 >n9 and n1 > n10:
         mayor = n1
@@ -78,7 +88,7 @@ def menor(n1,n2,n3,n4,n5,n6,n7,n8,n9,n10):
                                             menor = n10
                                     return n10
 def prom(n1,n2,n3,n4,n5,n6,n7,n8,n9,n10):
-    s = a+b+c+d+e+f+g+h+i+j
+    s = n1+n2+n3+n4+n5+n6+n7+n8+n9+n10
     r = s/10.0
     return r
                                 

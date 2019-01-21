@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 '''
 Josue Artemio Hernandez Rodriguez, 316060064
+En este problema se busca el máximo común divisor
+de dos numeros especificados por el usuario.
 '''
 
 def mcd(a, b):
