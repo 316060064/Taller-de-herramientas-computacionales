@@ -10,6 +10,6 @@ y además de cuantas letras esta compuesta
 
 from Problema10 import calcula
 
-txt = input("Escribe una palabra: ")
+txt = input('Escribe una palabra("Texto"): ')
 
 print calcula(txt)

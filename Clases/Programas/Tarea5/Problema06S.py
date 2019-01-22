@@ -4,11 +4,13 @@
 Josue Artemio Hernandez Rodriguez, 316060064
 Te pide diez numeros separados con comas, y de
 estos te calcula el promedio.
+Me ayudo bastante el ejercico anterior para que
+este me quedara mas rápido
 '''
 
 
 from Problema06 import prom
 
-a,b,c,d,e,f,g,h,i,j = input("Dame los numeros: ")    
+n = input("Cuántos números son: ")    
 
-print prom(a,b,c,d,e,f,g,h,i,j)
+print prom(n)
