@@ -1,0 +1,76 @@
+\documentclass[letterpaper, 12pt,oneside]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\graphicspath{{Imagenes/}}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+
+\title{\Huge Taller de Herramientas Computacionales}
+\author{Josué Artemio Hernández Rodríguez}
+\date{21/Enero/2019}
+
+\begin{document}
+	\maketitle
+	\begin{center}
+		\includegraphics[scale=0.2]{2.png}
+	\end{center}
+
+	\newpage
+	
+	\title{\huge \textit{El uso de listas en Python II}}\\
+	
+	El resumen del dia lunes 21 de Enero de 2019 abarca lo siguiente:
+	\begin{enumerate}
+		\item Conceptos
+			\begin{itemize}
+				\item El tipo range() es una lista inmutable de números enteros en sucesión aritmética.Inmutable significa que, a diferencia de las listas, los range no se pueden modificar, una sucesión artimética es una sucesión en la que la diferencia entre dos términos consecutivos es siempre la misma.
+				
+				\item Una tupla es una lista que ya no puedes modificar, a diferencia de las listas que si es posible, pero si es posible extraer sus valores de forma similar, es decir con su índice.
+				\item Para evitar que se suban archivos innecesarios a nuestro repositorio de github es fundamental crear el archivo .gitignore, y en el editor de texto escribir las extensiones de archivo que no queremos que se suban cada que hagamos push al cliente de git, por ejemplo *.log, *.out, *.pdf, *.pyc, etc.
+			\end{itemize}
+		
+	
+		
+		\item Código de python
+			\begin{itemize}
+				\item {\textit{enumerate}} : Te da el valor del índice y ademas el calor del indice dentro de la lista
+				\item {\textit{[ ]}} : Los corchetes nos ayudan a acceder a un elemento dentro de una lista o para definir una lista.
+				\item {\textit{a = lista(n,m,p)}} : Lo que hace es crear una lista que inicia en n y termina en m - 1, que va de p en p.
+				\item {\textit{n=12; gradosC = [-5 + i*0.5 for i in range(n)]}} :  Es una forma corta de hacer una lista, \textit{por comprensión} en donde se define una n, despues la lista entre corchetes, donde por cada indice en n, lo multiplica por 0.5. Nos entrega como resultado:
+				\begin{align*}
+				[-5.0, -4.5, -4.0, -3.5, -3.0, -2.5, -2.0, -1.5, -1.0, -0.5, 0.0, 0.5]
+				\end{align*}
+				\item {\textit{zip() :}} Toma como argumento dos o más objetos iterables (idealmente cada uno de ellos con la misma cantidad de elementos) y retorna un nuevo iterable cuyos elementos son tuplas que contienen un elemento de cada uno de los iteradores originales.
+					
+				
+				\item 
+				\begin{lstlisting}
+for i, c in enumerate(gradosC):
+	gradosC[i] = c +5
+	print i, c
+				\end{lstlisting} Le suma 5 a cada elemento dentro de gradosC y te regresa los valores nuevos y el índice
+				\item 
+				\begin{lstlisting}
+for i in range(len(L1)):
+	L[i] += 5
+				\end{lstlisting} Una forma diferente de hacer lo mismo que el anterior, pero usando range, ademas se toma como argumento la longitud de la lista. y a cada valor del indice le suma 5.
+				
+			\end{itemize}
+		
+		
+	
+		
+	\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}

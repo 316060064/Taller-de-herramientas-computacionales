@@ -1,0 +1,93 @@
+\documentclass[letterpaper, 12pt,oneside]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\graphicspath{{Imagenes/}}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+
+\title{\Huge Taller de Herramientas Computacionales}
+\author{Josué Artemio Hernández Rodríguez}
+\date{22/Enero/2019}
+
+\begin{document}
+	\maketitle
+	\begin{center}
+		\includegraphics[scale=0.2]{2.png}
+	\end{center}
+
+	\newpage
+	
+	\title{\huge \textit{El uso de listas en Python III}}\\
+	
+	El resumen del día martes 22 de Enero de 2019 abarca lo siguiente:
+	\begin{enumerate}
+		\item Conceptos
+			\begin{itemize}
+				\item Las sublistas sirven para analizar informacion en un rango.
+				\item Se puede decir que las listas en python son listas circulares, porque si expecificas un índice negativo toma valores de derecha a izquierda.
+				\item Referencia, es cuando le asignamos el valor de una variable a otra.
+				\item Los atributos y metodos estan alojados en la memoria, y estan sumamente relacionados con los objetos.
+				\item Las variables son identificadores de un valor especifico
+				\item Se puede crear una copia de una lista, puede resultar que sus elemntos sean los mismos, pero como objeto no es el mismo.
+				\item La diferencia de \textit{for i in range():} y \textit{for i in lista:} es que la primera toma en cuenta los índices y la segunda forma toma la posición.
+			\end{itemize}
+		
+		
+		
+		\item Código de python
+			\begin{itemize}
+				\item {\textit{A[2:]}} : Regresa valores a partir del indice 2
+				\item {\textit{A[1:3]}} : Pone como rango de elementos a mostrar al índice 1 y 3, pero no se muestra el 3, digamos que es un intervalo cerrado/abierto.
+				\item {\textit{A[:3]}} : Muestra todos los valores que pertenecen a cada indice en A, pero como limite al 3, sin mostrarlo
+				\item {\textit{[1:-1]}} : Regresa todo, excepto el primero y el ultimo.
+			
+				\item {\textit{tabla[4:7][0:2]}} : De la lista que crea forma otra con el rango que se le esta indicando.
+					
+				\item {\textit{lista.index(\#)}} : Busca dónde está el valor que le especifiquemos (\#) y te regresa en que índice se encuentra
+			
+				\item \textit{lista.sort()} : Ordena los valores de la lista de menor a mayor
+				\item \textit{B = A[:]} : Crea una sublista de B, que a la vez es una copia fiel de cada argumento dentro de A.
+				\item \textit{B == A} : Si tienen los mismos elementos A y B, regresa un \textit{True}.
+				\item \textit{B is A} : Regresa un \textit{True} si es el mismo objeto
+				
+			\end{itemize}
+		
+		
+		\item Comandos de Latex
+		\begin{itemize}
+			\item \begin{lstlisting}
+\documentclass{beamer}
+			\end{lstlisting} Este tipo de documento se utiliza para crear presentaciones.
+			\item \begin{lstlisting}
+\begin{frame}
+	\end{frame}
+			\end{lstlisting} : Indica que aqui inica una nueva diapositiva
+			\item \begin{lstlisting}
+\frametitle{title}
+			\end{lstlisting} Le asigna un título a la diapositiva
+			\item \begin{lstlisting}
+\transboxin
+\transblindshorizontal
+			\end{lstlisting} Le agrega efectos de transición a cada diapositiva.
+			\item \begin{lstlisting}
+\begin{frame}[fragile]
+			\end{lstlisting} Se utiliza para especificar que en esa zona se colocara un \textit{verbatin} para escribir código de programación de python u otros.
+			
+			
+			
+		\end{itemize}
+		
+	\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
