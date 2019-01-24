@@ -1,0 +1,115 @@
+\documentclass[letterpaper, 12pt,oneside]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\graphicspath{{Imagenes/}}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage[hidelinks]{hyperref}
+
+\title{\Huge Taller de Herramientas Computacionales}
+\author{Josué Artemio Hernández Rodríguez}
+\date{22/Enero/2019}
+
+\begin{document}
+	\maketitle
+	\begin{center}
+		\includegraphics[scale=0.7]{3.jpg}
+	\end{center}
+
+	\newpage
+	
+	\title{\huge \textit{Recursividad y algo de listas en python }}\\
+	
+	El resumen del día miércoles 23 de Enero de 2019 abarca lo siguiente:
+	\begin{enumerate}
+		\item Conceptos y datos importantes de la clase
+			\begin{itemize}
+				\item Si colocamos un comentario despues de definir una función, este aparece en el shell como una nota de ayuda o de información emergente. La puedes utilizar para describir que hace la función, y ademas aparece por que valores puedes sustituir las variables que se encuentran dentro del parentesis de la función.
+				\item Las funciones que no tienen retorno se les denomina rutinas o procedimientos.
+				\item Existen dos hábitos de validez en python, las variables locales y las globales.
+				\item Una variable local es la que existe mientras hago el llamado a la función o mientras se este ejecutando.
+				\item Una variable global es aquella que la que tienen acceso todas las funciones, y siempre esta sin indentar.
+				\item La palabra reservada \textit{global T} dentro del bloque al definir la función, le esta especificando que la variable T la va tomar como global
+				\item Una forma practica de ver como funciona un codigo de python y otros lenguajes, es usar el interprete disponible en la página web: \url{www.pythontutor.com/visualize.html}
+				
+			\end{itemize}
+		
+		
+		
+		\item Código de python
+			\begin{itemize}
+				\item \begin{lstlisting}
+def fib(n):
+    if n> 2:
+        return fib(n-1) +fib(n-2)
+    else:
+        return 1
+				\end{lstlisting} Este código imprime la enesimo termino de la suceción de fibonnaci, pero hace uso de la recursividad de la función ya definida, tomando como caso base la de los dos primeros terminos que son 1, después del tercer término hace la suma de los términos anteriores, en \textit{return fib(n-1) +fib(n-2)} hace uso de la función recursiva.\\
+				
+				
+				\item \begin{lstlisting}
+def suma(n):
+    if n>1:
+        return n + suma(n-1)
+    else:
+        return (1)
+				\end{lstlisting} Ejemplo 2 de recursividad, ahora con la suma de los primeros n naturales, toma como caso base cuando n=1 regresa el mismo valor, pero en \textit{return n + suma(n-1)} hace uso de la recursividad para calcular la suma de n mayor a 1.\\
+				
+				\item \begin{lstlisting}
+def printR(L):
+   if L:
+      print L[0],
+      printR(L[1:])
+   else:
+      None
+				\end{lstlisting} Un ejemplo mas de recursividad, ahora para imprimir los elemenos de una lista, toma como base cuando la lista es de longitud 1 imprime el elemento con índice 0, pero cuando es mayor la longitud, imprime el primer, luego el segundo... hasta que se agoten los elementos de los índices.\\
+				
+				
+				\item \begin{lstlisting}
+def printR1(L):
+   if len(L)> 1:
+      print L[0],
+      printR(L[1:])
+				\end{lstlisting} Un ejemplo muy similar al anterior, pero usando \textit{len}, que no hace más que comparar la longitud de la lista, si es mayor a uno imprime el valor del índice 0 y después hace uso de la recursividad de la función para imprimir el valor del indice que sigue, y asi sucesivamente hasta que ya no haya un elemento.\\
+			
+					
+				\item \begin{lstlisting}
+L = []
+if L:
+   print "hola"
+   
+   
+L = [1,2,3]
+if L:
+   print "hola"   
+				\end{lstlisting} En estos dos ejemplos, se aprecia como funciona el \textit{if}, el cual si es verdadero sigue con lo que se le indique en el bloque, en este caso imprime. Cuando una lista es vacia dara como resultado \textit{False} y si tiene por lo menos un elemento dara \textit{True} que es el valor booleano que necesita para que imprima.\\
+				\item \begin{lstlisting}
+a = 0 
+if a: 
+   print 'a'
+				\end{lstlisting} Si el valor es cero, el \textit{if} dara como resultado \textit{False} y no va imprimir nada, como en el ejemplo anterior. 
+			
+				
+				
+			\end{itemize}
+		
+		
+		
+			
+			
+		
+		
+	\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}

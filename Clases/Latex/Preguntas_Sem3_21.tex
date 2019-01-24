@@ -1,0 +1,168 @@
+\documentclass[letterpaper, 12pt, oneside]{article}%especificaciones del documento
+\usepackage{amsmath}%paquete para escribir expresiones matemámaticas
+\usepackage{graphicx}%paquete para poder incluír imagenes en el documento
+\usepackage{xcolor} %paquete de LaTex para poder poner otro texto
+\graphicspath{{Imagenes/}}%directorio de la imagen, este lo cambian por el directorio en el que ustedes guardaron su imagen 1.png
+\usepackage[utf8]{inputenc} %para poder poner acentos
+\usepackage{listings}
+
+	\title{\Huge Taller de Herramientas Computacionales}
+	%\title{\Huge \colorbox{magenta}{Taller de Herramientas computacionales}} %De esta forma con colorbox pone el texto dentro de una "caja" de color.
+	\author{Josué Artemio Hernández Rodríguez}%autor del escrito
+	\date{21/Enero/19}%fecha del escrito
+
+\begin{document}%inicia el documento
+\maketitle
+%\vfill %Para rellenar el espacio y colocar hasta abajo de la pagina el siguiente texto, imagen.
+\begin{center}%inicia centrado
+\includegraphics[scale=0.2]{3.jpg}%del lado izquierdo se muestra el tamaño de la imagen, del derecho se escribe el nombre de la imagen a incluir en el texto
+\end{center}%termina el centrado para la imagen
+\newpage%crea una nueva página
+
+\title{\huge Preguntas: Semana 1\\}%titulo2 \\ sirven para saltar una linea.
+
+La semana 2 se resume en las siguientes preguntas:%letras de color azul
+\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\item ¿Qué es un algoritmo? \\
+	 Es un conjunto finito de instrucciones para resolver
+	 un problema especifico.
+	
+	\item ¿Cúal consideras que es la diferencia fundamental entre igualda y asignación?\\
+	Una igualdad puede despejarse y encontrar el valor, y una asignación no.
+	\item ¿A que nos referimos con "flavors de linux"?\\
+	A las diferentes versiones de una distribución de linux, y que en la mayoria de los casos son versiones mas ligeras
+	
+	\item ¿Que son y para que se utilizan if y else?\\
+	Son condicionales de python, si if es verdadera ejecuta lo que esta dentro del bloque, y else realiza algo mientras if sea falso.
+	\item ¿Cuales son las partes globales de un codigo para reolver un problema?
+		\begin{enumerate}
+			\item Definir valores iniciales
+			\item Partes que procesa la información
+			\item Y la parte del resultado
+		\end{enumerate}
+	
+	\item ¿Cúal es la diferencia entre if y while?\\
+	While se ejecuta hasta que se cumpla una condicion, en un número finito de veces, e if si su condicion es verdadera realiza lo que esta dentro del bloque una sola vez, si no es verdadero, se va a else.
+	
+	\item ¿Como abres una seccion nueva sin un número que la identifique en \LaTeX\\
+	De la misma forma solo que se le coloca un asterisco al final, es decir: \begin{lstlisting}
+\section*{title}
+	\end{lstlisting}
+	
+	\item ¿Cómo centras una formula matematica en \LaTeX?\\
+	Se usan los corchetes de esta manera:  \begin{lstlisting}
+\[ Formula   \]
+	\end{lstlisting}
+	
+	\item ¿En el contexto de python, a que nos refermimos con un "metodo"?\\
+	Son las acciones que realiza un objeto, modifican un
+	objeto o hace que interaccione con otro
+	
+	\item ¿Cómo pones en pausa un proceso?\\
+	Si se abre un programa desde la terminal, queda en espera, entonces es aqui donde se hace la siguiente combinación : ctrl + z
+	
+	\item ¿Para que srive esta combinacion: "programa" \&?
+	Arranca la aplicación ”programa” pero deja li-
+	bre la terminal y asi se evita tener varias ventanas de la termnal
+	abiertas
+	\item ¿Qué accion realiza el comando kill y kill -9?\\
+Kill manda llamar a un proceso, pero no le hace nada, pero si le agregaos -9, este se cierra.
+	\item ¿Qué realiza el siguiente comando chmod +x ”archivo?\\
+		Le asigna atributos de ejecucion a un archivo
+		
+	\item ¿Como buscas la ruta de un programa en especifico?\\
+	Con where is ”programa"
+	
+	\item ¿Cómo buscarias todos los archivos con la extension .pdf?\\
+	Con el comando siguiente dentro de la terminal: find . -name ”*.pdf”
+	
+	\item ¿Cual es la diferencia entre ”x,y,z” y x,y,z=?\\
+Que uno es una cadena con el texto x,y,z pero el otro es una asignación de valores
+
+	\item ¿Cómo colocas una matris en un documento de \LaTeX?\\
+	\\
+	Con el codigo siguiente:
+\begin{verbatim} 
+\begin{bmatrix}
+x {valor1} & x {valor2}\\
+x {valor3} & x {valor4}\\
+\end{bmatrix}
+\end{verbatim}
+
+
+	\item Menciona tres formas de colocar puntos suspencivos en LaTeX\\
+	Se usa dots para los puntos suspensivos normales, para los demas hay una variacion en la letra inicial, es decir:
+\begin{verbatim} 
+	\dots : Coloca puntos de forma horizontal
+	\ddots : Coloca puntos de manera diagonal
+	\vdots : Coloca puntos de manera vertical
+\end{verbatim}	
+	\item ¿Por qué es importante usar una variable auxiliar para intercambiar el valor de una variable por la de otra?\\
+	Cuando se necesite cambiar el valor de una variable a otra, es
+de suma importancia usar un auxiliar para que el valor que tenia
+antes no se pierda.
+
+	\item En python, ¿que significa lo siguiente: a\%b = c, r != 0?\\
+La primera expresion Nos dice que r es diferente de cero y en la siguiente, el operador modulo nos da como resultado el residuo de la división.
+	\item ¿Para qué nos sirve importar comandos de OS a python?\\
+Se pueden importar comandos procedentes de sistema operativo a python, y
+de esta forma tener de forma clara en que directorio nos encon-
+tramos, o movernos de directorio si es necesario. Esto nos sirve
+para movernos donde esta un modulo en especifico y asi importar
+una función.
+	\item ¿Cómo realizas un documento de tipo libro en LaTex?
+	Con documentclass{book}
+	\item ¿Cómo le colocas bibliografia a tu documento de LaTex?
+	Con el paquete de usepackage{biblatex} y para agregar la referencia bibliografica usamos: \begin{verbatim}
+\begin{thebibliography}{#}
+\bibitem{Libro}
+	\end{verbatim}
+	\item ¿Como dibijas una tabla?
+\begin{verbatim}
+Con el comando siguiente: \begin{array}{|v|v|v|}
+                          Texto" & "texto & "texto
+                          \end{array}
+\end{verbatim}
+	\item ¿Para que sirve "tableofcontents?
+	Agrega un índice de contenido en nuestro documento
+	
+	\item ¿Para qué nos sirven las lista en python?\\
+	Las listas en python son una herramienta muy interesante y potente que nos sirve para recolentar datos de manera robusta, estos datos adquieren la cualidad de objetos dentro de la lista
+	\item ¿Cúal es la diferencia entre posición e índice?\\
+	La diferencia de posición e índice es que la posición es un número n del 1 a un numero fínito, y el índice es (n-1)
+	\item ¿Cómo haces para abrir dos programas y que estos no anulen nuestra terminal?
+	Con una separacion usando \&, es decir: program1 \& program2
+	\item ¿Para que nos sirve el comando siguiente en python: type()?\\
+	Nos dice que tipo de dato es una variable, si es entero, flotante, cadena, etc.
+	\item ¿Para que nos sirve variable.append?\\
+	Agrega un elemento después del último dentro de una lista
+	\item ¿Como sabes por cuantos elementos esta conformada una lista?\\
+	Con len(a), donde a es la variable con la cual esta guardada la lista.
+	\item ¿Qué significa lo siguiente: L.insert(3,”otra cadena”)?
+	Nos dice que en el índice 3 agrega el elemento ”otra cadena”
+	\item ¿Cúal es la diferencia entre L[3] y Len(L[3])?
+	Que el primero nos indica cual es el elemento con indice 3 en la lista y el otro nos dice cual es la longitud(cuantos elementos tiene) del elemento con índice 3.
+	\item ¿Para qué nos sirve V.pop()?\\
+	Saca un elemento de la lista V. Si no le especifico un índice dentro de () sacara el último elemento de la lista.
+	\newpage
+	\item Menciona que hacen los siguientes codigos de python
+	\begin{verbatim}
+1.- L[3] + L[len(L)-1] 
+	\end{verbatim}
+	Junta los elementos con indice 3 y el ultimo de la lista en uno solo, esdecir si L[3]= Buenos y L[len(L)-1] = días, dentro de la lista:
+	 [1,2,3,"¿Cómo,45,62,"estás?"], nos da como resultado, "Buenosdías"
+	\begin{verbatim}
+	2.- for C in gradosC:
+	print 'Elemento de la lista: ', C
+	\end{verbatim}
+	Por cada indice en la lista gradosC, imprime "Elemento de la lista: + el elemento perteneciente a cada indice" 
+	\begin{verbatim}
+3.- print 'La lista C tiene: ',len(C), 'elementos'
+	\end{verbatim}
+		Nos imprime de cuantos elementos esta conformada la lista C.
+	
+	
+\end{enumerate}%finaliza el enlistado principal
+
+
+\end{document}%termina el documento
