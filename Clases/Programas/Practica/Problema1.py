@@ -1,3 +1,13 @@
+#!/usr/bin/python2.7
+# -*- coding: utf-8 -*-
+'''
+Josue Artemio Hernandez Rodriguez, 316060064
+
+
+
+'''
+
+
 def lista(gradosC):
     
     graC=[]

@@ -1,5 +1,14 @@
+#!/usr/bin/python2.7
+# -*- coding: utf-8 -*-
+'''
+Josue Artemio Hernandez Rodriguez, 316060064
+Similar al problema anterior. solo cambia el
+numero al que se eleva la función. Usando la recursividad
+se resuelve, dado un numero n, se calculo la suma de los
+cubos anteriores a esa n
 
-n = input ("Dame el numero a calcular: ")
+'''
+n = input ("Dame el número a calcular: ")
 
 def suma_cub(n):
     
