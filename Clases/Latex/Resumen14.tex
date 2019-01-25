@@ -1,0 +1,166 @@
+\documentclass[letterpaper, 12pt,oneside]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\graphicspath{{Imagenes/}}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage[hidelinks]{hyperref}
+
+\title{\Huge Taller de Herramientas Computacionales}
+\author{Josué Artemio Hernández Rodríguez}
+\date{24/Enero/2019}
+
+\begin{document}
+	\maketitle
+	\begin{center}
+		\includegraphics[scale=0.7]{3.jpg}
+	\end{center}
+
+	\newpage
+	
+	\title{\huge \textit{ }}\\
+	
+	El resumen del día jueves 24 de Enero de 2019 abarca lo siguiente:
+	\begin{enumerate}
+		\item Conceptos y datos importantes de la clase
+			\begin{itemize}
+				\item Una forma interesante de darle formato a una lista y que se asemeje a una matriz es usando numpy, y se manda llamar de esta manera: \textit{print (np.matrix(L))}\\
+				
+
+				\item Para instalar numpy basta con escribir esto en la terminal: \textit{sudo pip install numpy}\\
+				
+				\item Cuando estas escribiendo un codigo muy largo en python y no quieres que se vea de esa manera, puedes usar la diagonal invertida y continuar abajo con el código.\\
+				
+				\item Una variable local es la que existe mientras hago el llamado a la función o mientras se este ejecutando. Y quedaria de la siguiente manera:  \begin{lstlisting}
+   print '{base} aparece {n} veces en {adn}'.\
+   format(base=base, n=n, adn=adn)
+				\end{lstlisting}
+				
+				
+				
+			\end{itemize}
+		
+		
+		
+		\item Código de python
+			\begin{itemize}
+				\item \begin{lstlisting}
+adn= 'ATGCGACCTAT'
+base = 'C'				
+def contar_v1(adn,base):
+    adn=list(adn)
+    i = 0
+    for c in adn:
+        if c == base:
+        i += 1
+    return i
+				\end{lstlisting} Esta función lo que hace es contar cúantas veces el valor del índice es igual a la base, y se va almacenando en \textit{i} pero previamente convierte la cadena en lista.\\
+				
+				
+				\item \begin{lstlisting}
+adn= 'ATGCGACCTAT'
+base = 'C'
+def contar_v2(adn,base):
+    #adn=list(adn)
+    i = 0
+    for c in adn:
+        if c == base:
+            i += 1
+    return i
+				\end{lstlisting} Similar al anterior, pero este no recurre a convertir la cadena en una lista, y esto es porque de igual manera las cadenas usan indices, entonces no fue necesario. Y lo de mas es igual, usa un auxiliar \textit{i} como contador, que vaya almacenando las veces en que la base es igual a algun caracter en la cadena de ADN.\\
+				
+				\item \begin{lstlisting}
+adn= 'ATGCGACCTAT'
+base = 'C'
+def contar_v3(adn,base):
+    #adn=list(adn)
+    i = 0
+    # for c in adn:
+    for j in range(len(adn)):
+        if adn[j] == base:
+            i += 1
+    return i
+				\end{lstlisting} De igual manera hace lo mismo que los anteriores, solo que no convierte la cadena en lista y usa la función range, además de la longitud de la cadena, y compara los índices con la base, si es igual entonces suma 1 en i.\\
+				
+				
+				\item \begin{lstlisting}
+adn= 'ATGCGACCTAT'
+base = 'C'
+def contar_v4(adn,base):
+   #adn=list(adn)
+   i = 0
+   j= 0
+   # for c in adn:
+   #for j in range(len(adn)):
+   while j < len(adn):
+       if adn[j] == base:
+          i += 1
+       j +=1
+return i
+				\end{lstlisting} Una versión más de la función que cuenta cuantas veces aparece una letra en la cadena, a diferencia de los anteriores, usa un \textit{while}, dos variables i y j. La manera en la que funciona es que mientras j sea menor a la longitud de la cadena, el ciclo se va repetir ese total de veces, en el bloque compara si el índice es igual a la base, si es igual almacena +1 en i; la j cuenta cuantas veces se repitio la función, si le ponemos \textit{return i, j} regresa el valor, es decir el total de elementos de la cadena. \\
+			
+					
+				\item \begin{lstlisting}
+import numpy as np
+print (np.matrix(L)) 
+				\end{lstlisting}  Muy útil para darle formato a una lista como si fuera una matriz. y queda de la siguiente manera.\\
+				\begin{lstlisting}
+       [[ True  True  True  True]
+        [False False False  True]
+        [ True  True False  True]]
+				\end{lstlisting}
+				
+\newpage
+				
+				\item \begin{lstlisting}
+def resolver(L,e):
+   print e
+   n = len(L[0])
+   m=len(L)
+   x = e[0]
+   y = e[1]
+   #if hay salida:
+   if y == n-1 or x == m-1:
+       return e[0]+1,e[1]+1 
+   else:
+       if L[x][y+1] == False:
+          e = [x,y+1]
+          return resolver(L,e)
+  
+       elif L[x+1][y] == False:
+           e = [x+1,y]
+           print e
+           return resolver(L,e)
+           
+       else:
+           print "ya no puede avanzar al frente"
+
+type(L)                      
+e= [1,0]        
+r =resolver(L,e)
+				\end{lstlisting} Esta función resuelve el laberinto de 4x3 y que su salida pueda estar abajo o a la derecha. Usa la recursividad para resolver encontrar la salida, partiendo de la coordenada 1,0, que a su vez es una lista e = [1,0]
+			
+				
+				
+			\end{itemize}
+		
+		
+		
+			
+			
+		
+		
+	\end{enumerate}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}

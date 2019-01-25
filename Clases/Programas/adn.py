@@ -37,7 +37,7 @@ def contar_v4(adn,base):
         if adn[j] == base:
             i += 1
         j +=1
-    return i
+    return i,j
 
 
 
@@ -50,7 +50,8 @@ print contar_v1(adn,base)
 
 n = contar_v2(adn,base)
 print n
-print '%s aparece %d veces en %s'%(base, n, adn)
+print '%s aparece %d veces en %s'%\
+      (base, n, adn)
 print '{base} aparece {n} veces en {adn}'.\
       format(base=base, n=n, adn=adn)
 print contar_v2(adn,base)   
