@@ -2,33 +2,61 @@
 # -*- coding: utf-8 -*-
 '''
 Josue Artemio Hernandez Rodriguez, 316060064
-Lo que hice fue usar while, y poner como
-condicion que mientras n sea mayor a 1 se repita el pro-
-ceso hasta que no sea 1
+Por más que intente correr el programa jamas me compilo bien,
+solo en el shell corría, per me salia lo siguiente:
+-0.342857142857
+-0.322857142857
+-0.302857142857
+-0.142857142857
+-0.0428571428571
+0.0171428571429
+0.0571428571429
+-0.312244897959
+-0.292244897959
+-0.272244897959
+-0.112244897959
+0.0477551020408
+0.0677551020408
+0.0877551020408
+-0.281632653061
+-0.261632653061
+
+Traceback (most recent call last):
+  File "<pyshell#240>", line 4, in <module>
+    f = x[0]/25.0 - x[1]/49.0
+TypeError: 'float' object has no attribute '__getitem__'
 '''
-'''def malla(a,b,c=1):
-    for i in range(a,b,c):
-        c *=.5
-        lista = []
-        lista.append(i)
-        print lista
-        '''
+
+
+
+lista = [ [ (-5,7),  (-4.5,7),  (-4,7),    ( 0,7), (2.5,7),   (4,7),    (5,7)],
+      [(-5,5.5),(-4.5,5.5),(-4,5.5),   (0,5.5),(4,5.5), (4.5,5.5), (5,5.5)],
+      [ (-5,4),  (-4.5,4),   (-4.4),    (0,4),   (4,4),   (4.5,4),  (5,4)],
+      [ (-5,-4), (-4.5,-4),  (-4.-4),   (0,-4), (4,-4),   (4.5,-4),  (5,-4)],
+      [(-5,-5.5),(-4.5,-5.5),(-4,-5.5), (0,-5.5),(4,-5.5),(4.5,-5.5),(5,-5.5)],
+      [ (-5,-7), (-4.5,-7),  (-4,-7),    ( 0,-7), (2.5,-7), (4,-7),  (5,-7)]  ]
+'''import numpy
+print (numpy.matrix(lista))'''
+
+
+def malla(lista):
+    lista = [ [ (-5,7),  (-4.5,7),  (-4,7),    ( 0,7), (2.5,7),   (4,7),    (5,7)],
+      [(-5,5.5),(-4.5,5.5),(-4,5.5),   (0,5.5),(4,5.5), (4.5,5.5), (5,5.5)],
+      [ (-5,4),  (-4.5,4),   (-4.4),    (0,4),   (4,4),   (4.5,4),  (5,4)],
+      [ (-5,-4), (-4.5,-4),  (-4.-4),   (0,-4), (4,-4),   (4.5,-4),  (5,-4)],
+      [(-5,-5.5),(-4.5,-5.5),(-4,-5.5), (0,-5.5),(4,-5.5),(4.5,-5.5),(5,-5.5)],
+      [ (-5,-7), (-4.5,-7),  (-4,-7),    ( 0,-7), (2.5,-7), (4,-7),  (5,-7)]  ]
+    #lista2= []
+    x= 0
+    for i in range(len(lista)):
+        for j in range(len(lista[i])):
+            x = lista [i][j]
+            f = x[0]/25.0 - x[1]/49.0
+            print f
+
         
-    
-
-n = input ("¿Cuantos valores?: ")
-L = []
-for i in range(n):
-    valor = input("Dame el valor")
-    L.append(valor)
-    
-m = input ("¿Cuantos valores?: ")
-L2 = []
-for i in range(m):
-    valor = input("Dame el valor")
-    L2.append(valor)
+	    
+                
 
 
-  
 
-    
