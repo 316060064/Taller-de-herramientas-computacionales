@@ -9,7 +9,7 @@
 	\title{\Huge Taller de Herramientas Computacionales}
 	%\title{\Huge \colorbox{magenta}{Taller de Herramientas computacionales}} %De esta forma con colorbox pone el texto dentro de una "caja" de color.
 	\author{Josué Artemio Hernández Rodríguez}%autor del escrito
-	\date{21/Enero/19}%fecha del escrito
+	\date{22/Enero/19}%fecha del escrito
 
 \begin{document}%inicia el documento
 \maketitle
@@ -19,38 +19,41 @@
 \end{center}%termina el centrado para la imagen
 \newpage%crea una nueva página
 
-\title{\huge Preguntas: Semana 1\\}%titulo2 \\ sirven para saltar una linea.
+\title{\huge Preguntas: 22 de enero de 2019\\}%titulo2 \\ sirven para saltar una linea.
 
-La semana 2 se resume en las siguientes preguntas:%letras de color azul
+
 \begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
-	\item ¿Qué es un algoritmo? \\
-	 Es un conjunto finito de instrucciones para resolver
-	 un problema especifico.
+	\item ¿Por qué en python se les denomina a las listas como "listas circulares"? \\
+	 Porque si especificas un índice negativo toma valores de derecha a izquierda.
 	
-	\item Cuando decimos que "range() es una lista inmutable de números enteros", ¿a qué se refiere con inmutable?\\
-	A que a diferencia de las listas, los range no se pueden modificar
-	\item ¿Qué es una tupla?\\
-	Es una lista que ya no puedes modificar, a diferencia de las listas que si es posible, pero si es posible extraer sus valores
+	\item ¿Qué son las variables?\\
+	Las variables son identificadores de un valor especifico, y sirve para representar alguna expresion muy larga y asi no tener que volver a escribirla en un modulo o bloque que la necesite, o simplemente para resguardar un valor.
 	
-	\item ¿Para que se utiliza {\textit{enumerate}}?\\
-	Te da el valor del índice y ademas el calor del indice dentro de la lista
+	\item ¿Cuál es la diferencia de \textit{for i in range():} y \textit{for i in lista:}?\\
+	Que la primera toma en cuenta los índices y la segunda forma toma la posición.
+	
+	\item ¿Qué resulta de estos códigos de python?\\
+	\begin{itemize}
+		\item \textit{A[2:]} : Regresa valores a partir del índice 2
+		\item \textit{A[1:3]}; Pone como rango de elementos a mostrar al índice 1 y 3, pero no se muestra el 3, digamos que es un intervalo cerrado/abierto.
+		\item \textit{A[:3]} : Muestra todos los valores que pertenecen a cada indice en A, pero como limite al 3, sin mostrarlo
+		\item \textit{[1:-1]}  : Regresa todo, excepto el primero y el ultimo.
+	\end{itemize}
 	
 	\item ¿Qué resulta tras la compilación de este código: {\textit{n=12; gradosC = [-5 + i*0.5 for i in range(n)]}}?
 	
 	Crea una lista de forma corta o por comprension, y el resultado es una sucesión de numeros enteros, con un rango de -5 a 0.5, y va aumentando en 1/2.
 		
 	
-	\item ¿Como funciona y para que sirve: {\textit{zip() :}}?\\
-	
-	Toma como argumento dos o más objetos iterables y regresa un nuevo iterable cuyos elementos son tuplas que contienen un elemento de cada uno de los objetos(listas por ejemplo).
-	
-	
-	\item Menciona que hace el siguiente código: \begin{verbatim}
-for i, c in enumerate(gradosC):
-    gradosC[i] = c +5
-    print i, c
+	\item ¿Que uso se le da a: \begin{verbatim}
+	\begin{frame}[fragile] ?
 	\end{verbatim}
-	Al elemento de cada indice de gradosC le suma 5, e imprime el ìndice y c, que son los valores aumentados en 5.
+	
+	Se utiliza para especificar que en esa zona se colocara un begin{verbatin} para escribir código de programación de python u otros.
+	
+	
+	\item ¿Para que sirve el tipo de documento beamer en \LaTeX?
+	Este tipo de documento se utiliza para crear presentaciones.
 	
 	 
 	

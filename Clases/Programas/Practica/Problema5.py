@@ -47,16 +47,13 @@ def malla(lista):
       [(-5,-5.5),(-4.5,-5.5),(-4,-5.5), (0,-5.5),(4,-5.5),(4.5,-5.5),(5,-5.5)],
       [ (-5,-7), (-4.5,-7),  (-4,-7),    ( 0,-7), (2.5,-7), (4,-7),  (5,-7)]  ]
     #lista2= []
-    x= 0
+    
+    f=0
     for i in range(len(lista)):
         for j in range(len(lista[i])):
             x = lista [i][j]
-            f = x[0]/25.0 - x[1]/49.0
-            print f
-
-        
-	    
-                
-
-
+            #f = x[0]/25.0 - x[1]/49.0
+            return x
+import numpy
+print (numpy.matrix(x))
 

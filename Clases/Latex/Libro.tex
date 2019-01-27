@@ -1,0 +1,1242 @@
+\documentclass{book}
+\usepackage[spanish]{babel}
+\usepackage{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\graphicspath{{Imagenes/}}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\title{\textit{Taller de Herramientas Computacionales}}
+\author{\textit{Josué Artemio Hernández Rodríguez}}
+\date{\today}
+
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	
+
+
+
+\chapter{Bitacoras de las clases}
+%primer resumen
+
+
+
+\section{\textit{Introducción al curso}}%titulo2 \\ sirven para saltar una linea.
+\begin{flushright}
+	\date{07 de enero de 2019}
+\end{flushright}
+
+
+
+\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\item Distribuciones de Linux: %item sirve enlistar el elemento, este es el primer elemento enumerado.
+	\begin{enumerate}%Inicia otro enlistado dentro del listado anterior.
+		\item Fedora
+		\item Linux
+		\item Ubuntu
+	\end{enumerate}%finaliza el enlistado.
+	\item Comandos de Bash%Segundo elemento enumerado.
+	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
+		\item set
+		\item cd: nos dirige a un directorio
+		\item mkdir: Crea un directorio
+		\item mkdir -p Crea un arbol de directorios
+		\item ls: Muestra información de un archivo o directorio especifico, pero si agregamos -l muestra permisos
+		\item File: Nos dice tipo de archivo es
+		\item uname-a: Nos dice que arquitectura es nuestro sistema, muy util para saber si estamos aprovechando las ventajas de un CPU X64
+		\item cmod "   ": Modifica los permisos de un archivo o directorio en especifico
+		
+	\end{itemize}%finaliza enlistado con itemize
+	\item Como vamos a trabajar en el curso
+	\begin{itemize}
+		\item Libro de python disponible en la bibliografia de la materia, y gratuito en \url{www.bibliotecas.unam.mx}
+		\item Resumenes de las clases en LaTeX
+		\item Examenes cada viernes
+		\item Ver en que aplicar lo aprendido
+	\end{itemize}
+	\item \textbf{Tarea}
+	\\
+	\textbf{Verificar todos los comandos}
+	
+	
+	
+\end{enumerate}%finaliza el enlistado principal
+
+
+%fin resumen 1
+
+%inicio resumen 2
+
+
+\section{Clase en laboratorio}%titulo2 \\ sirven para saltar una linea.
+\begin{flushright}
+	\date{08 de enero de 2019}
+\end{flushright}
+
+\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	
+	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+	\begin{itemize}
+		\item bash: Define la forma en como esta funcionando el sistema
+		\item Path : Ruta donde va buscar los binarios
+		\item Tigervnc: Sirve para mirar remotamente la pantalla o área de trabajo de otra PC en la misma red
+		\item github: Pagina de alojamiento y servicio de repositorios de git
+		\item git: Cliente de github para fedora (linux) el cual usaremos para mantener actualizado al dia los repositorios en la nube
+		
+	\end{itemize}
+	
+	\item Comandos de Bash%Segundo elemento enumerado.
+	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
+		\item file /tmp/* Muestra que tipo de archivos hay en esa ruta
+		\item set | less : Muestra paginando el contenido, para pasar a la pagina siguiente se oprime "RePág" o retrocede con "AvPág"
+		
+		
+	\end{itemize}%finaliza enlistado con itemize
+	\item Còmo instalar y configurar tigervnc
+	\begin{enumerate}
+		\item En la terminal, escribir "dnf install tygervnc" y esperar que se instale tigervnv
+		\item Escribir la ip: "192.168.13.125"
+	\end{enumerate}
+	\item Còmo instalar y configurar git
+	\begin{enumerate}
+		\item Teclear en la terminal "sudo yum install git", esperar a que se instalen los paquetes necesarios...
+		\item Teclear  git config --global user.email "tuemail@dominio.com"
+		\item Teclear  git config --global user.name "tuusuario"      
+		\item Teclear  git init
+		\item Teclear  git clone "url
+		\item Teclear git add *
+		\item Teclear git commit (Se escribe un comentario sobre lo que hicimos, para salir se sigue esta secuencias: ESC, :wq)
+		\item Escribir el usuario de github
+		\item Escribir la contraseña
+	\end{enumerate}
+	
+	
+	
+	
+	\end{enumerate}%finaliza el enlistado principal
+
+
+%fin resumen 2
+
+%inicio resumen 3
+   \section{Trabajando con Github y git}%titulo2 \\ sirven para saltar una linea.
+\begin{flushright}
+	\date{09 de enero de 2019}
+\end{flushright}
+   
+   \begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+   	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+   	\begin{itemize}
+   		\item git esta compuesto por un cliente web y otro en modo texto
+   		\item Un archico o directorio que tiene esta estrcutura ".archivo/" significa que esta oculto
+   		\item Existen otros editores de texto en linux, como lo son "vi" y "gedit"
+   		\item Gitlab cumple con la mismas funciones que github, la de tener en la nube tus repositorios
+   	\end{itemize}
+   	
+   	\item Comandos de Bash%Segundo elemento enumerado.
+   	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
+   		\item "gedit" o "vi" abren los editores de texto correspondintes
+   		\item cat muestra el contenido de un archivo
+   		\item mkdir -p: Crea los directorios necesarios para llegar a una ruta deseada
+   		\item cd lleva a home
+   		\item git push: para subir informacion a gitub
+   		\item git pull: para bajar la información de github
+   		\item history > Clases/Latex/Comandos03.txt:  Guarda el historial de comandos en un archivo llamado Comandos.txt
+   		
+   		
+   	\end{itemize}%finaliza enlistado con itemize
+   	\item Pasos para resolver un problema eficazmente
+   	\begin{enumerate}
+   		\item Problema
+   		\item Definir (entender)
+   		\item analizar y delimitar el problema
+   		\item Soluciones
+   		\item Describir la solución con detalle
+   		\item Solución general
+   	\end{enumerate}
+   	
+\end{enumerate}
+
+%fin resumen 3	
+
+%Inicio resumen 4	
+
+\section{Resolviendo un problema con python\\}%titulo2 \\ sirven para saltar una linea.
+\begin{flushright}
+	\date{10 de enero de 2019}
+\end{flushright}
+
+
+\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+	\begin{enumerate}
+		\item idle: Es un IDE, entornno de desarrollo integrado, dicho de otro modo es un editor especializado que tiene una forma de comunicación con el interprete, una de sus ventajas es que tiene herramienta de depuracion de errores
+		\item shell, es un interprete de comandos, forma parte de las herramientas de idle
+		\item En python, el símbolo de "gato" se utiliza para realizar comentarios en el código
+	\end{enumerate}
+	
+	\item Comandos de Bash y python %Segundo elemento enumerado.
+	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
+		\item dnf install python-tools : instala los paquetes necesarios para usar idle
+		\item python + doble Tab , muestra los archivos que inician con la palabra python
+		\item 1/2 Da como resultado 0.0 porque esta dividiendo partes enteras, lo correctoes usar 1.0/2 o al revez, 1/2.0
+		\item print muestra en pantalla lo que se deseé
+		
+		
+	\end{itemize}%finaliza enlistado con itemize
+	
+	\item \textbf{Tarea}
+	\\
+	Hacer el problema que buscamos en codigo de python
+	
+	
+\end{enumerate}%finaliza el enlistado principal
+
+
+%fin res 4
+
+% Inicio res 5
+\section{Trabajando con python y LaTeX}%titulo2 \\ sirven para saltar una linea.
+\begin{flushright}
+	\date{11 de enero de 2019}
+\end{flushright}
+
+\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+	\begin{itemize}
+		\item '''texto''' se utiliza para realizar un comentario con multilinea y para que aparezcan en pantalla basta usar antes el comando print 			
+		\item Scrip: Son instrucciones de Bash o en otro lenguaje que siguen una secuencia especifica			
+		\item Palabras reservadas en python estan reservadas para el lenguaje de ese interprete, es decir no puedes nombrar ninguna variable con esas secuencias de letras, por ejemplo: print, import, etc.
+		\item Un modulo en python es una secuencia de funciones.
+	\end{itemize}
+	
+	\item Comandos de python%Segundo elemento enumerado.
+	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
+		\item El simbolo \% en python sirve para denotar que se va sustituir por una variable, y en LaTex se usa para realizar comentarios.
+		\item se utiliza "\%g" para expresar el flotanto en su forma mas corta
+		\item Si tengo una variable con una cadena y quiero mostra su contenido con print, debo poner print '\%s' \%(c1)
+		\item se utiliza "\ n" para denotar que hay un espacio entruna linea y otra
+		\item Se utiliza "\%f" para expresar un numero en forma flotante
+		\item Se utiliza math.sqrl para realizar una raíz cuadrada
+		\item Se utiliza math.pow para raices en cualquier base, por ejemplo: math.pow (9,1.0/3), que significa, la raiz cubica de 9
+		
+		
+	\end{itemize}%finaliza enlistado con itemize
+	\item Comandos de LaTeX y comandos en terminal para instalar paquetes necesarios
+	\begin{enumerate}
+		\item Para instalar texstudio basta con escribir en la terminal "dnf install texstudio"
+		\item Que significa la estructura de LaTeX
+		\begin{enumerate}
+			\item documentclass[]{} Expecificaciones del documento
+			\item usepackage{amsmath} Paquete para escribir expresiones matemáticas
+			\item usepackage{graphicx} Paquete para poder incluír imagenes en el documento
+			\item usepackage{xcolor} Paquete de LaTex para poder poner otro texto
+			\item graphicspath{{Imagenes/}} Directorio de la imagen, este lo cambian por el directorio
+			\item usepackage[utf8]{inputenc} Sirve para poder poner acentos
+			\item title{} Le agrega un titulo a nuestro texto
+			\item author{} Autor del escrito
+			\item date{11/01/19} Fecha
+			\item begin{document} Inicia el documento
+			\item end{document} Finaliza el documento
+			\item maketitle Hace una portada a nuestro documento
+			\item begin{center} Inicia el centrado de un texto o un objeto/imagen
+			\item end{center} Finaliza el centrado
+			\item newpage Crea una nueva página
+			\item title{} Pone un titulo
+			\item Huge o huge Pone letras grandez o muy grandes
+			\item begin{enumerate} Inicio de númeración para enlistar las cosas vistas en clase y finaliza con end{enumerate} y finaliza con end{enumerate}
+			\item begin{itemize} enlista y finaliza con end{itemize}
+			\item item enumera, es parte de begin{enumerate} o begin{itemize}
+			\item textbf Pone letras en negrita
+			
+		\end{enumerate}
+		
+	\end{enumerate}
+	\item \textbf{Tarea}
+	\begin{itemize}
+		\item Hacer un modulo del programa en python que hicimos de tarea
+		\item Realizar un resumen por cada clase en LaTeX
+		\item Realizar preguntas
+		
+	\end{itemize}
+	Buscar un problema de física que requiera la aplicacion de una fórmula para resolverlo
+	
+	
+\end{enumerate}%finaliza el enlistado principal
+%fin res 5
+
+
+%inicio res 6
+\section{Algoritmos de Python\\}%titulo2 \\ sirven para saltar una linea.
+\begin{flushright}
+	\date{14 de enero de 2019}
+\end{flushright}
+
+\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+	\begin{itemize}
+		\item Un algoritmo es un conjunto finito de instrucciones para resolver un problema especifico.
+		\item La diferencia de una igualdad y una asignacion es que una se puede despejar y la otra no.			
+		\item Los dos puntos despues de un if, denota un bloque
+		\item Con "flavors" nos referimos a diferentes versiones de una distribución de linux, que en el mayor de los casos son mas ligeras y aptas para computadoras menos potentes
+		
+	\end{itemize}
+	
+	\item Comandos de python%Segundo elemento enumerado.
+	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
+		\item if Es una condición, aquí van las órdenes que se ejecutan si la condición es cierta
+		y que pueden ocupar varias líneas
+		\item else Aquí van las órdenes que se ejecutan si la condición if es falsa y que también pueden ocupar varias líneas
+		\item return: Esta sentencia incluye un valor de retorno. Esta sentencia significa: “Retorne inmediatemente de esta función y use la siguiente expresión como un valor de retorno”
+		\item echo muestra el resultado del calculo que hizo
+		\item def nos dice que comienza una función o modulo
+		
+		
+		
+	\end{itemize}%finaliza enlistado con itemize
+	\item Algunas flavors de linux son:
+	\begin{itemize}
+		\item KDE Desktop
+		\item XFCE Desktop
+		\item LXQT Desktop
+		\item Cinnamon
+		\item LXDE Desktop (apta para PC's antiguas)
+	\end{itemize}
+	\item Que hicimos en clase... \\
+	\\
+	Vimos como es un proceso de asignacion en python y como se diferencia con una igualdad. En una asignacion puede volverse iteractivo, en un numero finito de pasos para resolver un problema especifico, en el caso de la clase de hoy fue aproximar el area de un paralelogramo de lado x * 1 con el de area de un cuadrado de lado $\sqrt{x}$
+	\item \textbf{Tarea}
+	\begin{itemize}
+		\item Definir una función para resolver el ejercicio del circulo, con ayuda de las sentencias if, else, while.
+		\item Realizar un resumen de la clase en LaTeX
+		
+		
+	\end{itemize}
+	
+	
+	
+\end{enumerate}%finaliza el enlistado principal
+
+
+%fin res 6
+
+
+%inicio res 7
+\section{Funciones para resolver problemas en python}%titulo2 \\ sirven para saltar una linea.
+\begin{flushright}
+	\date{15 de enero de 2019}
+\end{flushright}
+
+\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+	\begin{itemize}
+		\item Partes globales son: definir valores iniciales, parte que procesa la información, y parte del resultado.	
+		\item La diferencia entre if y while es que if se realiza una vez y while 0 o más veces		
+		\item Python sirve para realizar calculo simbolico y numerico
+		\item Tex se encarga de organizar un documento, y LaTeX es una herramienta de creación de documentos
+	\end{itemize}
+	
+	\item Comandos de python%Segundo elemento enumerado.
+	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
+		\item while : Es un bucle qie mientras la condicion no se cumpla sigue ejecutandose hasta que sea verdadero
+		\item if : Condicional que si es verdadero ejecuta
+		\item a = 5 : Es una asignación
+		\item a == 5 : Es de comparación
+		
+		
+		
+	\end{itemize}%finaliza enlistado con itemize
+	\item Comandos de LaTeX
+	\begin{itemize}
+		\item  
+		\begin{lstlisting}  
+\section{} 
+		\end{lstlisting} Abre una sección nueva con un número
+		\item 
+		\begin{lstlisting}  
+\section*{}
+		\end{lstlisting} Abre una sección nueva sin número
+		\item 
+		\begin{lstlisting}  
+$\alpha + \beta$\\ %\[  \]
+\[\alpha + \beta\] 
+		\end{lstlisting} Nos ayudan a representar las letras que representan a alpha y beta\\
+		
+		\begin{lstlisting}  
+$x_{2}$
+$x^{2}$
+		\end{lstlisting}  Representa un subindice e indice respectivamente
+		\item 
+		\begin{lstlisting}  
+$\frac{2}{3}$\\
+$\frac{\frac{3}{4}}{\frac{2}{3}}$
+		\end{lstlisting} Nos ayudan a representar fracciones e dos formatos distintos.
+		\item
+		\begin{lstlisting}  
+$\sqrt{2} 
+\sqrt{3^2}^2$
+		\end{lstlisting} Expresan raiz cuadrada de un numero y la otra la raiz cuadrada elevada a una potencia, en este caso 2
+		\item
+		\begin{lstlisting} 
+$\int_{a}^{b} x^2$
+		\end{lstlisting} Expresa la integral de "a" a "b", cuando x esta elevada al cuadrado
+		\item
+		\begin{lstlisting}  
+$\partial x^2$
+		\end{lstlisting} La parcial de x al cuadrado
+		\item
+		\begin{lstlisting} 
+$3\quad 2$ 			
+		\end{lstlisting} Coloca un espacio entre el 3 y el 2
+		\item
+		\begin{lstlisting} 
+\usepackage{listings}			
+		\end{lstlisting} Este paquete nos permite colocar código de programacion en nuestro texto
+		
+		
+		
+		
+		
+	\end{itemize}
+	
+	
+	
+	
+\end{enumerate}%finaliza el enlistado principal
+
+
+
+%fin res 7
+
+%inicio res 8
+
+\section{Funciones en python}%titulo2 
+%\\ sirven para saltar una linea.
+\begin{flushright}
+	\date{16 de enero de 2019}
+\end{flushright}
+
+\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+	\begin{itemize}
+		\item Metodo: Son las acciones que realiza un objeto, modifican un objeto o hace que interaccione con otro.
+		\item Dentro de una biblioteca se define una clase y en la biblioteca hay funciones o metodos (asociados a un objeto)	
+		\item La diferencia de función y metodo es que una funcion no depende del objeto y el metodo si
+		
+	\end{itemize}
+	
+	\item Comandos de bash%Segundo elemento enumerado.
+	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
+		\item ctrl + z : Pone en pausa un proceso
+		\item bg : Puedo usar la terminal sin pausar los procesos
+		\item "programa" \& : Arranca la aplicación "programa" pero deja libre la terminal y asi se evita tener varias ventanas de la termnal abiertas
+		\item fg : Regresa a primer plano un programa despues de haberla congelado con ctrl + z
+		\item kill Manda una señal a un proceso en especifico
+		\item kill -9 "proceso": Cierra un proceso
+		\item ls -l "archivo" :Muestra información adicional de un archivo
+		\item chmod +x "archivo" : Le da atributos de ejecucion a un archivo
+		\item ./ Directorio en el que estoy
+		\item ../ Directorio padre
+		\item where is "programa" : Busca la ruta de un programa especificado
+		\item find . -name "*.py" : Busca todos los archivos con la extencion .py
+		
+		
+	\end{itemize}%finaliza enlistado con itemize	
+	\newpage
+	\item Comandos y código de python
+	\begin{itemize}
+		\item \#!/usr/bin/python2.7  : Se coloca en nuestro programa de python para especificarle que utilice cierte interprete para ejecutarlo, en este caso es python2.7
+		\item "x,y,z" Es una cadena con las variables x, y \& z
+		\item x,y,z= Es una asignacion de valores
+		\item 'x,y,z'. split(",") Nos separa las letras en comas
+	\end{itemize}
+	\item Código de \LaTeX
+	\begin{itemize}
+		\item 
+		\begin{lstlisting}
+\begin{bmatrix}
+x_{2} & x_{3}\\
+x_{4} & x_{6}\\  : Nos coloca una matriz
+\end{bmatrix}
+		\end{lstlisting}
+		\item 
+		\begin{lstlisting}
+\dots : Coloca tres puntos de forma horizontal
+		\end{lstlisting}
+		\item 
+		\begin{lstlisting}
+\ddots : Coloca tres puntos de manera diagonal
+		\end{lstlisting}
+		\item 
+		\begin{lstlisting}
+\vdots : Coloca tres puntos de manera vertical
+		\end{lstlisting}
+		
+		
+		\item 
+		\begin{lstlisting}
+$\sum$ : Nos coloca el simbolo de suma
+		\end{lstlisting}
+		
+		
+	\end{itemize}	
+	
+	
+	
+	
+\end{enumerate}%finaliza el enlistado principal
+
+
+%fin res 8
+
+
+%inicio res 9
+
+	\section{Resolviendo problemas con Python}%titulo2 \\ sirven para saltar una linea.
+\begin{flushright}
+	\date{17 de enero de 2019}
+\end{flushright}
+
+\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+	\begin{itemize}
+		\item Se pueden importar paquetes de sistema operativo a python, y de esta forma tener de forma clara en que directorio nos encontramos, o movernos de directorio si es necesario. Esto nos sirve para movernos donde esta un modulo en especifico y asi importar una función.
+		\item Cuando se necesite cambiar el valor de una variable a otra, es de suma importancia usar un auxiliar para que el valor que tenia antes no se pierda.	
+		
+	\end{itemize}
+	
+	\item Código en python%Segundo elemento enumerado.
+	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
+		\item r != 0: Nos dice que si r es diferente de cero.
+		\item a\%b = c : El operador modulo nos da como resultado el residuo de la división.
+		\item from math import sihn, exp, e, pi : del modulo math nos importa las variables que estan separadas por comas
+		\item from os import getcwd as pwd, listdir as ls, chdir as cd : Nos importa del sistema operativo los comandos separados por comas, y los renombra con pwd, ls y cd.
+		
+		
+		
+		
+	\end{itemize}%finaliza enlistado con itemize
+	\item Código de LaTeX
+	\begin{itemize}
+		\item 
+		\begin{lstlisting}
+\documentclass{book}
+		\end{lstlisting} Es un tipo de documento distinto, es usual para redactar un libro.
+		\item  
+		\begin{lstlisting}  
+\usepackage{biblatex}
+		\end{lstlisting} Este paquete nos sirve para poder incluir bibliografia en nuestro documento. 
+		\item 
+		\begin{lstlisting}  
+\usepackage[spanish]{babel}
+		\end{lstlisting} Le aplica el idioma español a nuestras secciones, titulos, subtitulos, etc. 
+		\item 
+		\begin{lstlisting}  
+\begin{array}{|v|v|v|}
+	
+\end{array}
+		\end{lstlisting} Sirve para tabular tablas\\
+		
+		\begin{lstlisting}  
+\hline  o \hline "texto" \hline
+		\end{lstlisting}  Dibuja lineas horizontales a nuestra tabla, si se coloca el texto entre dos de esta lineas se cierra la tabla
+		\item 
+		\begin{lstlisting}  
+"Texto" & "texto & "texto"
+		\end{lstlisting} Las separaciones con \& sirve para señalar que el texto es parte de otra columna.
+		\item
+		\begin{lstlisting}  
+\mbox{texto}
+		\end{lstlisting} Nos coloca una caja de texto, muy util en las tablas.
+		\item
+		\begin{lstlisting} 
+\begin{align}      \begin{align*}
+        		o     
+\end{align}         \end{align*}
+		\end{lstlisting} Sirve para alinear el texto en el centro, con asterico hace que no aparezca como listado
+		\item
+		\begin{lstlisting}  
+\tableofcontents
+		\end{lstlisting} Coloca un indice a nuestro documento
+		\item
+		\begin{lstlisting} 
+\url{www.google.com}
+\hyperref[Google]{www.google.com}			
+		\end{lstlisting} Nos ayudan a colocar una url o hibervinculo, la diferencia es que en la url nos da un acceso en el PDF, mientras que en hyperref solo nos coloca el texto.
+		\item
+		\begin{lstlisting} 
+\chapter{Capitulo}
+\section{seccion}		
+		\end{lstlisting} Hacemos referencia a que inicia un capítulo o  inicia una seccion dentro del mismo con "section"
+		\item
+		\begin{lstlisting} 
+\begin{thebibliography}{#}
+\bibitem{Libro}
+		
+\end{thebibliography}		
+		\end{lstlisting} Nos sirve para agregar las referencias bibliograficas
+		\item
+		\begin{lstlisting} 
+\textit{text}		
+		\end{lstlisting} Nos pone el texto en italica
+		
+		
+		
+	\end{itemize}
+	
+	
+	
+	
+\end{enumerate}%finaliza el enlistado principal
+
+
+%fin res 9
+
+
+%inicio res 10
+	\section{\textit{El uso de listas en Python}}
+
+\begin{flushright}
+	\date{18 de enero de 2019}
+\end{flushright}
+
+\begin{enumerate}
+	\item Conceptos
+	\begin{itemize}
+		\item Las listas en python son una herramienta muy interesante y potente que nos sirve para recolentar datos de manera robusta, estos datos adquieren la cualidad de objetos dentro de la lista.
+		\item La diferencia de posición e índice es que la posición es un número n del 1 a un numero fínito, y el índice es (n-1).
+	\end{itemize}
+	
+	\item Comandos de bash
+	\begin{itemize}
+		\item {\textit{idle ; emacs} }: El punto y coma separa comandos en bash, en este caso los comandos para abrir dos programas. No los abre juntos, si no que el segundo solo se abre al cerrarse el primero.
+		\item {\textit{idle \& emacs}} : La separacion de dos comandos con \& representa que ambos se ejecutan al mismo tiempo. A diferencia del anterior, uno no depende del otro.
+	\end{itemize}
+	
+	\item Código de python
+	\begin{itemize}
+		\item {\textit{type(cadena)}} : Type nos sirve para evaluar de que tipo es una variable, es decir, cadena, entero, flotante, etc.
+		\item {\textit{bool(cadena)}} : Evalua si una variable es booleano, si lo es regresa {\textit{True}}, si no lo es {\textit{False}}. Si es cero regresa False y si es diferente de cero True.
+		\item L = [] o L = [1.2.3.8.9] : Los corchetes repreentan una lista, la primera es una lista vacia, y la otra es una lista con los elemntos 1,2,3,8 y 9.
+		\item L.append : Agrega elementos despues del último elemento dentro de la lista con variabel "L".
+		\item len(L) : Nos dice de cuantos elementos esta conformada una lista.
+		\item L.insert(3,"otra cadena"): Nos dice que  en el índice 3 agrega el elemento "otra cadena".
+		\item L[3] : Nos muestra cual es el elemento con índice 3 dentro de la lista L
+		\item len(L[5]) : Nos dice cual es la longitud del elemento con índice 5  dentro de la cadena L. Seria trivial si fuera una lista de solo unos cuantos numeros, asi que es util si la lista contiene como elementos otras listas.
+		\item L.pop() : Saca un elemento de la lista L. Si no le especifico un índice dentro de () sacara el ultimo de la lista.
+		\item L.extend : Agrega elementos independientes a una lista
+		\item L[3] + L[len(L)-1] : Junta los elementos con indice 3 y el ultimo de la lista en uno solo, es decir si L[3]= ¿Cómo y L[len(L)-1] = estás?, entro de la lista L[1,2,3,"¿Cómo,45,62,"estás?"], nos da como resultado, "¿Cómoestás?"
+		\item 
+		\begin{lstlisting}
+archivoLatex = ['libro.tex', 'libro.log', 'libro.pdf']
+archivotex, archivolog, archivopdf = archivoLatex
+		\end{lstlisting} ArchivoLatex es una lista con los elementos 'libro.tex', 'libro.log', 'libro.pdf'. Pero "archivotex, archivolog, archivopdf = archivoLatex" lo que hace es asignarle una variable a cada uno de esos elementos dentro de la lista. Es decir, al escribir archivotex no regresara como resultado 'libro.tex'
+		\item 
+		\begin{lstlisting}
+for C in gradosC:
+print 'Elemento de la lista: ', C
+		\end{lstlisting} Por cada indice en la lista gradosC, imprime "Elemento de la lista: + el elemento perteneciente a cada indice" 
+		\item 
+		\begin{lstlisting}
+print 'La lista C tiene: ',len(C), 'elementos'
+		\end{lstlisting} ~
+		
+	\end{itemize}
+	
+	
+\end{enumerate}
+
+%fin res 10
+
+%inicio res 11
+	\section{\textit{El uso de listas en Python II}}
+\begin{flushright}
+	\date{21 de enero de 2019}
+\end{flushright}
+
+\begin{enumerate}
+	\item Conceptos
+	\begin{itemize}
+		\item El tipo range() es una lista inmutable de números enteros en sucesión aritmética.Inmutable significa que, a diferencia de las listas, los range no se pueden modificar, una sucesión artimética es una sucesión en la que la diferencia entre dos términos consecutivos es siempre la misma.
+		
+		\item Una tupla es una lista que ya no puedes modificar, a diferencia de las listas que si es posible, pero si es posible extraer sus valores de forma similar, es decir con su índice.
+		\item Para evitar que se suban archivos innecesarios a nuestro repositorio de github es fundamental crear el archivo .gitignore, y en el editor de texto escribir las extensiones de archivo que no queremos que se suban cada que hagamos push al cliente de git, por ejemplo *.log, *.out, *.pdf, *.pyc, etc.
+	\end{itemize}
+	
+	
+	
+	\item Código de python
+	\begin{itemize}
+		\item {\textit{enumerate}} : Te da el valor del índice y ademas el calor del indice dentro de la lista
+		\item {\textit{[ ]}} : Los corchetes nos ayudan a acceder a un elemento dentro de una lista o para definir una lista.
+		\item {\textit{a = lista(n,m,p)}} : Lo que hace es crear una lista que inicia en n y termina en m - 1, que va de p en p.
+		\item {\textit{n=12; gradosC = [-5 + i*0.5 for i in range(n)]}} :  Es una forma corta de hacer una lista, \textit{por comprensión} en donde se define una n, despues la lista entre corchetes, donde por cada indice en n, lo multiplica por 0.5. Nos entrega como resultado:
+		\begin{align*}
+		[-5.0, -4.5, -4.0, -3.5, -3.0, -2.5, -2.0, -1.5, -1.0, -0.5, 0.0, 0.5]
+		\end{align*}
+		\item {\textit{zip() :}} Toma como argumento dos o más objetos iterables (idealmente cada uno de ellos con la misma cantidad de elementos) y retorna un nuevo iterable cuyos elementos son tuplas que contienen un elemento de cada uno de los iteradores originales.
+		
+		
+		\item 
+		\begin{lstlisting}
+for i, c in enumerate(gradosC):
+   gradosC[i] = c +5
+   print i, c
+		\end{lstlisting} Le suma 5 a cada elemento dentro de gradosC y te regresa los valores nuevos y el índice
+		\item 
+		\begin{lstlisting}
+for i in range(len(L1)):
+   L[i] += 5
+		\end{lstlisting} Una forma diferente de hacer lo mismo que el anterior, pero usando range, ademas se toma como argumento la longitud de la lista. y a cada valor del indice le suma 5.
+		
+	\end{itemize}
+	
+	
+	
+	
+\end{enumerate}
+
+
+%fin res 11
+
+%inicio res 12
+	\section{\textit{El uso de listas en Python III}}
+
+\begin{flushright}
+	\date{22 de enero de 2019}
+\end{flushright}
+
+\begin{enumerate}
+	\item Conceptos
+	\begin{itemize}
+		\item Las sublistas sirven para analizar informacion en un rango.
+		\item Se puede decir que las listas en python son listas circulares, porque si expecificas un índice negativo toma valores de derecha a izquierda.
+		\item Referencia, es cuando le asignamos el valor de una variable a otra.
+		\item Los atributos y metodos estan alojados en la memoria, y estan sumamente relacionados con los objetos.
+		\item Las variables son identificadores de un valor especifico
+		\item Se puede crear una copia de una lista, puede resultar que sus elemntos sean los mismos, pero como objeto no es el mismo.
+		\item La diferencia de \textit{for i in range():} y \textit{for i in lista:} es que la primera toma en cuenta los índices y la segunda forma toma la posición.
+	\end{itemize}
+	
+	
+	
+	\item Código de python
+	\begin{itemize}
+		\item {\textit{A[2:]}} : Regresa valores a partir del indice 2
+		\item {\textit{A[1:3]}} : Pone como rango de elementos a mostrar al índice 1 y 3, pero no se muestra el 3, digamos que es un intervalo cerrado/abierto.
+		\item {\textit{A[:3]}} : Muestra todos los valores que pertenecen a cada indice en A, pero como limite al 3, sin mostrarlo
+		\item {\textit{[1:-1]}} : Regresa todo, excepto el primero y el ultimo.
+		
+		\item {\textit{tabla[4:7][0:2]}} : De la lista que crea forma otra con el rango que se le esta indicando.
+		
+		\item {\textit{lista.index(\#)}} : Busca dónde está el valor que le especifiquemos (\#) y te regresa en que índice se encuentra
+		
+		\item \textit{lista.sort()} : Ordena los valores de la lista de menor a mayor
+		\item \textit{B = A[:]} : Crea una sublista de B, que a la vez es una copia fiel de cada argumento dentro de A.
+		\item \textit{B == A} : Si tienen los mismos elementos A y B, regresa un \textit{True}.
+		\item \textit{B is A} : Regresa un \textit{True} si es el mismo objeto
+		
+	\end{itemize}
+	
+	
+	\item Comandos de Latex
+	\begin{itemize}
+		\item \begin{lstlisting}
+\documentclass{beamer}
+		\end{lstlisting} Este tipo de documento se utiliza para crear presentaciones.
+		\item \begin{lstlisting}
+\begin{frame}
+    \end{frame}
+		\end{lstlisting} : Indica que aqui inica una nueva diapositiva
+		\item \begin{lstlisting}
+\frametitle{title}
+		\end{lstlisting} Le asigna un título a la diapositiva
+		\item \begin{lstlisting}
+\transboxin
+\transblindshorizontal
+		\end{lstlisting} Le agrega efectos de transición a cada diapositiva.
+		\item \begin{lstlisting}
+\begin{frame}[fragile]
+		\end{lstlisting} Se utiliza para especificar que en esa zona se colocara un \textit{verbatin} para escribir código de programación de python u otros.
+		
+		
+		
+	\end{itemize}
+	
+\end{enumerate}
+
+%fin res 12
+
+
+%inicio res 13
+	\section{\textit{Recursividad y algo más de listas en python }}
+	
+	\begin{flushright}
+		\date{23 de enero de 2019}
+	\end{flushright}
+
+
+\begin{enumerate}
+	\item Conceptos y datos importantes de la clase
+	\begin{itemize}
+		\item Si colocamos un comentario despues de definir una función, este aparece en el shell como una nota de ayuda o de información emergente. La puedes utilizar para describir que hace la función, y ademas aparece por que valores puedes sustituir las variables que se encuentran dentro del parentesis de la función.
+		\item Las funciones que no tienen retorno se les denomina rutinas o procedimientos.
+		\item Existen dos hábitos de validez en python, las variables locales y las globales.
+		\item Una variable local es la que existe mientras hago el llamado a la función o mientras se este ejecutando.
+		\item Una variable global es aquella que la que tienen acceso todas las funciones, y siempre esta sin indentar.
+		\item La palabra reservada \textit{global T} dentro del bloque al definir la función, le esta especificando que la variable T la va tomar como global
+		\item Una forma practica de ver como funciona un codigo de python y otros lenguajes, es usar el interprete disponible en la página web: \url{www.pythontutor.com/visualize.html}
+		
+	\end{itemize}
+	
+	
+	
+	\item Código de python
+	\begin{itemize}
+		\item \begin{lstlisting}
+def fib(n):
+    if n> 2:
+        return fib(n-1) +fib(n-2)
+    else:
+        return 1
+		\end{lstlisting} Este código imprime la enesimo termino de la suceción de fibonnaci, pero hace uso de la recursividad de la función ya definida, tomando como caso base la de los dos primeros terminos que son 1, después del tercer término hace la suma de los términos anteriores, en \textit{return fib(n-1) +fib(n-2)} hace uso de la función recursiva.\\
+		
+		
+		\item \begin{lstlisting}
+def suma(n):
+    if n>1:
+        return n + suma(n-1)
+    else:
+        return (1)
+		\end{lstlisting} Ejemplo 2 de recursividad, ahora con la suma de los primeros n naturales, toma como caso base cuando n=1 regresa el mismo valor, pero en \textit{return n + suma(n-1)} hace uso de la recursividad para calcular la suma de n mayor a 1.\\
+		
+		\item \begin{lstlisting}
+def printR(L):
+    if L:
+        print L[0],
+        printR(L[1:])
+    else:
+        None
+		\end{lstlisting} Un ejemplo mas de recursividad, ahora para imprimir los elemenos de una lista, toma como base cuando la lista es de longitud 1 imprime el elemento con índice 0, pero cuando es mayor la longitud, imprime el primer, luego el segundo... hasta que se agoten los elementos de los índices.\\
+		
+		
+		\item \begin{lstlisting}
+def printR1(L):
+    if len(L)> 1:
+        print L[0],
+        printR(L[1:])
+		\end{lstlisting} Un ejemplo muy similar al anterior, pero usando \textit{len}, que no hace más que comparar la longitud de la lista, si es mayor a uno imprime el valor del índice 0 y después hace uso de la recursividad de la función para imprimir el valor del indice que sigue, y asi sucesivamente hasta que ya no haya un elemento.\\
+		
+		
+		\item \begin{lstlisting}
+L = []
+if L:
+    print "hola"
+		
+		
+L = [1,2,3]
+if L:
+    print "hola"   
+		\end{lstlisting} En estos dos ejemplos, se aprecia como funciona el \textit{if}, el cual si es verdadero sigue con lo que se le indique en el bloque, en este caso imprime. Cuando una lista es vacia dara como resultado \textit{False} y si tiene por lo menos un elemento dara \textit{True} que es el valor booleano que necesita para que imprima.\\
+		\item \begin{lstlisting}
+a = 0 
+if a: 
+    print 'a'
+		\end{lstlisting} Si el valor es cero, el \textit{if} dara como resultado \textit{False} y no va imprimir nada, como en el ejemplo anterior. 
+		
+		
+		
+	\end{itemize}
+	
+	
+	
+	
+	
+	
+	
+\end{enumerate}
+
+
+%fin res 13
+
+
+
+
+%inicio res 14
+\section{\textit{Representación de problemas con listas}}
+
+\begin{flushright}
+	\date{24 de enero de 2019\\}
+\end{flushright}
+
+\begin{enumerate}
+	\item Conceptos y datos importantes de la clase
+	\begin{itemize}
+		\item Una forma interesante de darle formato a una lista y que se asemeje a una matriz es usando numpy, y se manda llamar de esta manera: \textit{print (np.matrix(L))}\\
+		
+		
+		\item Para instalar numpy basta con escribir esto en la terminal: \textit{sudo pip install numpy}\\
+		
+		\item Cuando estas escribiendo un código muy largo en python y no quieres que se vea de esa manera, puedes usar la diagonal invertida y continuar abajo con el código.\\
+		
+		\item Una variable local es la que existe mientras hago el llamado a la función o mientras se este ejecutando. Y quedaria de la siguiente manera:  \begin{lstlisting}
+print '{base} aparece {n} veces en {adn}'.\
+format(base=base, n=n, adn=adn)
+		\end{lstlisting}
+		
+		
+		
+	\end{itemize}
+	
+	
+	
+	\item Código de python
+	\begin{itemize}
+		\item \begin{lstlisting}
+adn= 'ATGCGACCTAT'
+base = 'C'				
+def contar_v1(adn,base):
+   adn=list(adn)
+   i = 0
+   for c in adn:
+       if c == base:
+           i += 1
+           return i
+		\end{lstlisting} Esta función lo que hace es contar cúantas veces el valor del índice es igual a la base, y se va almacenando en \textit{i} pero previamente convierte la cadena en lista.\\
+		
+		
+		\item \begin{lstlisting}
+adn= 'ATGCGACCTAT'
+base = 'C'
+def contar_v2(adn,base):
+    #adn=list(adn)
+    i = 0
+    for c in adn:
+        if c == base:
+            i += 1
+    return i
+		\end{lstlisting} Similar al anterior, pero este no recurre a convertir la cadena en una lista, y esto es porque de igual manera las cadenas usan indices, entonces no fue necesario. Y lo de mas es igual, usa un auxiliar \textit{i} como contador, que vaya almacenando las veces en que la base es igual a algun caracter en la cadena de ADN.\\
+		
+		\item \begin{lstlisting}
+adn= 'ATGCGACCTAT'
+base = 'C'
+def contar_v3(adn,base):
+    #adn=list(adn)
+    i = 0
+    # for c in adn:
+    for j in range(len(adn)):
+        if adn[j] == base:
+            i += 1
+    return i
+		\end{lstlisting} De igual manera hace lo mismo que los anteriores, solo que no convierte la cadena en lista y usa la función range, además de la longitud de la cadena, y compara los índices con la base, si es igual entonces suma 1 en i.\\
+		
+		
+		\item \begin{lstlisting}
+adn= 'ATGCGACCTAT'
+base = 'C'
+def contar_v4(adn,base):
+    #adn=list(adn)
+    i = 0
+    j= 0
+    # for c in adn:
+    #for j in range(len(adn)):
+    while j < len(adn):
+        if adn[j] == base:
+            i += 1
+            j +=1
+return i
+		\end{lstlisting} Una versión más de la función que cuenta cuantas veces aparece una letra en la cadena, a diferencia de los anteriores, usa un \textit{while}, dos variables i y j. La manera en la que funciona es que mientras j sea menor a la longitud de la cadena, el ciclo se va repetir ese total de veces, en el bloque compara si el índice es igual a la base, si es igual almacena +1 en i; la j cuenta cuantas veces se repitio la función, si le ponemos \textit{return i, j} regresa el valor, es decir el total de elementos de la cadena. \\
+		
+		
+		\item \begin{lstlisting}
+import numpy as np
+print (np.matrix(L)) 
+		\end{lstlisting}  Muy útil para darle formato a una lista como si fuera una matriz. y queda de la siguiente manera.\\
+		\begin{lstlisting}
+[[ True  True  True  True]
+ [False False False  True]
+ [ True  True False  True]]
+		\end{lstlisting}
+		
+		\newpage
+		
+		\item \begin{lstlisting}
+def resolver(L,e):
+    print e
+    n = len(L[0])
+    m=len(L)
+    x = e[0]
+    y = e[1]
+    #if hay salida:
+    if y == n-1 or x == m-1:
+        return e[0]+1,e[1]+1 
+    else:
+        if L[x][y+1] == False:
+            e = [x,y+1]
+            return resolver(L,e)
+		
+    elif L[x+1][y] == False:
+        e = [x+1,y]
+        print e
+        return resolver(L,e)
+    else:
+        print "ya no puede avanzar al frente"
+		
+type(L)                      
+e= [1,0]        
+r =resolver(L,e)
+		\end{lstlisting} Esta función resuelve el laberinto de 4x3 y que su salida pueda estar abajo o a la derecha. Usa la recursividad para resolver encontrar la salida, partiendo de la coordenada 1,0, que a su vez es una lista e = [1,0]
+		
+		
+		
+	\end{itemize}
+	
+	
+	
+	
+	
+	
+	
+\end{enumerate}
+%fin res 14
+
+
+%inicio preg1
+\chapter{\textit{Cuestionario}}
+\section{\textit{Semana I}}%titulo2 \\ sirven para saltar una linea.
+
+La semana se resume en las siguientes preguntas:%letras de color azul
+\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\item Menciona las distribuciones de linux que conozcas \\
+	Fedora, ubuntu, mint	
+	
+	\item ¿Cómo se llama el elemento que parpadea en la pantalla de la terminal?\\
+	Pront
+	\item ¿Cómo haces para ir a Home directamente en la terminal?\\
+	Usando el comando cd
+	\item ¿A qué se refiere esta linea de comando "file /bin/bash?\\
+	Muestra la informacion del archivo bash
+	\item ¿Como haces para saber que arquitectura es la distribución de inuz que estas usando?\\
+	Con el comando uname -a
+	\item ¿Si tienes una duda, como abres el manual de un comando en especifico?\\
+	Con man seguido del comando que quiero saber utilizar
+	\item ¿Qué es un ssh?\\
+	Es un interprete de comandos seguros
+	\item ¿Qué es Bash?\\
+	Define la forma en como esá funcionando el sistema
+	
+	\item ¿Cómo instalas tigervnc y para que sirve?\\
+	Con el comando "dnf yum install tigervnc" y sirve para ver remotamente en mi pantalla lo que se trasmite desde otra desde la misma red.
+	
+	\item ¿Para qué sirve git pull?\\
+	Para obtener una actualizacion de mis datos alojados en mi ciente de github y asi evitar inconsistencias
+	
+	\item Menciona dos o mas editores de texto en Linux que conozcas\\
+	vi, nano, y gedit
+	\item ¿Cómo haces para crear un árbol de directorio en una sola linea de comando?\\
+	Con mkdir -p seguido de la rama de directorios a crear
+	\item ¿Como guardas el historial de la terminal?\\
+	Con \$ history > Carpeta/Subcarpeta/Comandos.txt
+	\item ¿Qué es idle?\\
+	Es un IDE, que quiere decir entorno de desarrollo integrado, y sirve para crear un script de instrucciones para python
+	
+	\item ¿Cómo realizas comentarios en python?\\
+	Con \# y con '''  '''
+	\item Si tienes una variable con una cadena, ¿cómo haces para mostrar su contenido con print?\\
+	Debo poner print '\%s' \%(c1) donde c1 es otra variable especificada
+	\item ¿Qué son los modulos de python?\\
+	Son bibliotecas de funciones
+	\item ¿En python a que se refiere \%g o  \%f, \%e o \%E, y \%d?\\
+	En primera instancia, \% denota que se va sustituir por el valor de una variable ya definida por el ususario, y \%g o  \%f se refieren a que se va expresar en flotante en su formato mas corto o simplemente como un flotante; \%e o \%E se refiere a que se va sustituir por una variable y se expresara en formato científico, y la diferencia radica en que se expresara con minisucula o mayusculo a consideración del usuario; y \%d se refiere a que se expresara como un entero.
+	\item En TeXstudio, menciona como especificas el tipo de documento que vas a realizar y parametros de formato\\
+	Con documentclass[parametros]\{tipo\}
+	\item Menciona el paquete que tienes que usar para poder incluir imagenes en el documento en TeXstudio\\
+	Se utiliza el paquete usepackage\{graphicx\} y ya que vas a colocar la imagen se escribe includegraphics[parametros]\{nombrearchivo.png\}
+	\item ¿Cómo instalas TeXstudio?\\
+	Desde la terminal escribo en el pront \$ dnf install texstudio
+	
+	
+	
+	
+\end{enumerate}%finaliza el enlistado principal
+%fin preg1
+
+
+
+%inicio prej2
+\section{\textit{Semana II}}%titulo2 \\ sirven para saltar una linea.
+
+La semana 2 se resume en las siguientes preguntas:%letras de color azul
+\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\item ¿Qué es un algoritmo? \\
+	Es un conjunto finito de instrucciones para resolver
+	un problema especifico.
+	
+	\item ¿Cúal consideras que es la diferencia fundamental entre igualda y asignación?\\
+	Una igualdad puede despejarse y encontrar el valor, y una asignación no.
+	\item ¿A que nos referimos con "flavors de linux"?\\
+	A las diferentes versiones de una distribución de linux, y que en la mayoria de los casos son versiones mas ligeras
+	
+	\item ¿Que son y para que se utilizan if y else?\\
+	Son condicionales de python, si if es verdadera ejecuta lo que esta dentro del bloque, y else realiza algo mientras if sea falso.
+	\item ¿Cuales son las partes globales de un codigo para reolver un problema?
+	\begin{enumerate}
+		\item Definir valores iniciales
+		\item Partes que procesa la información
+		\item Y la parte del resultado
+	\end{enumerate}
+	
+	\item ¿Cúal es la diferencia entre if y while?\\
+	While se ejecuta hasta que se cumpla una condicion, en un número finito de veces, e if si su condicion es verdadera realiza lo que esta dentro del bloque una sola vez, si no es verdadero, se va a else.
+	
+	\item ¿Como abres una seccion nueva sin un número que la identifique en \LaTeX\\
+	De la misma forma solo que se le coloca un asterisco al final, es decir: \begin{lstlisting}
+\section*{title}
+	\end{lstlisting}
+	
+	\item ¿Cómo centras una fórmula matemática en \LaTeX?\\
+	Se usan los corchetes de esta manera:  \begin{lstlisting}
+\[ Formula   \]
+	\end{lstlisting}
+	
+	\item ¿En el contexto de python, a que nos refermimos con un "metodo"?\\
+	Son las acciones que realiza un objeto, modifican un
+	objeto o hace que interaccione con otro
+	
+	\item ¿Cómo pones en pausa un proceso?\\
+	Si se abre un programa desde la terminal, queda en espera, entonces es aqui donde se hace la siguiente combinación : ctrl + z
+	
+	\item ¿Para que srive esta combinacion: "programa" \&?
+	Arranca la aplicación ”programa” pero deja li-
+	bre la terminal y asi se evita tener varias ventanas de la termnal
+	abiertas
+	\item ¿Qué accion realiza el comando kill y kill -9?\\
+	Kill manda llamar a un proceso, pero no le hace nada, pero si le agregaos -9, este se cierra.
+	\item ¿Qué realiza el siguiente comando chmod +x ”archivo?\\
+	Le asigna atributos de ejecucion a un archivo
+	
+	\item ¿Como buscas la ruta de un programa en especifico?\\
+	Con where is ”programa"
+	
+	\item ¿Cómo buscarias todos los archivos con la extension .pdf?\\
+	Con el comando siguiente dentro de la terminal: find . -name ”*.pdf”
+	
+	\item ¿Cual es la diferencia entre ”x,y,z” y x,y,z=?\\
+	Que uno es una cadena con el texto x,y,z pero el otro es una asignación de valores
+	
+	\item ¿Cómo colocas una matris en un documento de \LaTeX?\\
+	\\
+	Con el codigo siguiente:
+	\begin{verbatim} 
+\begin{bmatrix}
+x {valor1} & x {valor2}\\
+x {valor3} & x {valor4}\\
+	\end{bmatrix}
+	\end{verbatim}
+	
+	
+	\item Menciona tres formas de colocar puntos suspencivos en LaTeX\\
+	Se usa dots para los puntos suspensivos normales, para los demas hay una variacion en la letra inicial, es decir:
+	\begin{verbatim} 
+    \dots : Coloca puntos de forma horizontal
+    \ddots : Coloca puntos de manera diagonal
+    \vdots : Coloca puntos de manera vertical
+	\end{verbatim}	
+	\item ¿Por qué es importante usar una variable auxiliar para intercambiar el valor de una variable por la de otra?\\
+	Cuando se necesite cambiar el valor de una variable a otra, es
+	de suma importancia usar un auxiliar para que el valor que tenia
+	antes no se pierda.
+	
+	\item En python, ¿que significa lo siguiente: a\%b = c, r != 0?\\
+	La primera expresion Nos dice que r es diferente de cero y en la siguiente, el operador modulo nos da como resultado el residuo de la división.
+	\item ¿Para qué nos sirve importar comandos de OS a python?\\
+	Se pueden importar comandos procedentes de sistema operativo a python, y
+	de esta forma tener de forma clara en que directorio nos encon-
+	tramos, o movernos de directorio si es necesario. Esto nos sirve
+	para movernos donde esta un modulo en especifico y asi importar
+	una función.
+	\item ¿Cómo realizas un documento de tipo libro en LaTex?
+	Con documentclass{book}
+	\item ¿Cómo le colocas bibliografia a tu documento de LaTex?
+	Con el paquete de usepackage{biblatex} y para agregar la referencia bibliografica usamos: \begin{verbatim}
+\begin{thebibliography}{#}
+\bibitem{Libro}
+	\end{verbatim}
+	\item ¿Como dibijas una tabla?
+	\begin{verbatim}
+Con el comando siguiente: \begin{array}{|v|v|v|}
+                          Texto" & "texto & "texto
+                           \end{array}
+	\end{verbatim}
+	\item ¿Para que sirve "tableofcontents?
+	Agrega un índice de contenido en nuestro documento
+	
+	\item ¿Para qué nos sirven las lista en python?\\
+	Las listas en python son una herramienta muy interesante y potente que nos sirve para recolentar datos de manera robusta, estos datos adquieren la cualidad de objetos dentro de la lista
+	\item ¿Cúal es la diferencia entre posición e índice?\\
+	La diferencia de posición e índice es que la posición es un número n del 1 a un numero fínito, y el índice es (n-1)
+	\item ¿Cómo haces para abrir dos programas y que estos no anulen nuestra terminal?
+	Con una separacion usando \&, es decir: program1 \& program2
+	\item ¿Para que nos sirve el comando siguiente en python: type()?\\
+	Nos dice que tipo de dato es una variable, si es entero, flotante, cadena, etc.
+	\item ¿Para que nos sirve variable.append?\\
+	Agrega un elemento después del último dentro de una lista
+	\item ¿Como sabes por cuantos elementos esta conformada una lista?\\
+	Con len(a), donde a es la variable con la cual esta guardada la lista.
+	\item ¿Qué significa lo siguiente: L.insert(3,”otra cadena”)?
+	Nos dice que en el índice 3 agrega el elemento ”otra cadena”
+	\item ¿Cúal es la diferencia entre L[3] y Len(L[3])?
+	Que el primero nos indica cual es el elemento con indice 3 en la lista y el otro nos dice cual es la longitud(cuantos elementos tiene) del elemento con índice 3.
+	\item ¿Para qué nos sirve V.pop()?\\
+	Saca un elemento de la lista V. Si no le especifico un índice dentro de () sacara el último elemento de la lista.
+	\newpage
+	\item Menciona que hacen los siguientes codigos de python
+	\begin{verbatim}
+1.- L[3] + L[len(L)-1] 
+	\end{verbatim}
+	Junta los elementos con indice 3 y el ultimo de la lista en uno solo, esdecir si L[3]= Buenos y L[len(L)-1] = días, dentro de la lista:
+	[1,2,3,"¿Cómo,45,62,"estás?"], nos da como resultado, "Buenosdías"
+	\begin{verbatim}
+2.- for C in gradosC:
+       print 'Elemento de la lista: ', C
+	\end{verbatim}
+	Por cada indice en la lista gradosC, imprime "Elemento de la lista: + el elemento perteneciente a cada indice" 
+	\begin{verbatim}
+3.- print 'La lista C tiene: ',len(C), 'elementos'
+	\end{verbatim}
+	Nos imprime de cuantos elementos esta conformada la lista C.
+	
+	
+\end{enumerate}%finaliza el enlistado principal
+%fin preg2`
+
+
+
+%inicio sem3_1
+\section{\textit{Cuestionario: \date{21 de enero de 2019}}}
+%fin sem3_1
+
+
+%inicio sem3_2
+\section{\textit{Cuestionario: \date{22 de enero de 2019}}}
+%fin sem3_2
+
+%inicio sem3_3
+\section{\textit{Cuestionario: \date{23 de enero de 2019}}}
+%fin sem3_3
+
+%inicio sem3_4
+\section{\textit{Cuestionario: \date{24 de enero de 2019}}}
+%fin sem3_4
+
+
+
+
+	
+\end{document}
+	
