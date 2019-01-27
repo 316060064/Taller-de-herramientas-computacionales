@@ -33,8 +33,15 @@
 				\item Cuando estas escribiendo un codigo muy largo en python y no quieres que se vea de esa manera, puedes usar la diagonal invertida y continuar abajo con el código.\\
 				
 				\item Una variable local es la que existe mientras hago el llamado a la función o mientras se este ejecutando. Y quedaría de la siguiente manera:  \begin{lstlisting}
-   print '{base} aparece {n} veces en {adn}'.\
-   format(base=base, n=n, adn=adn)
+v0 = 34
+g = 9.81
+t = 4.3
+
+def posicion (t,v0):
+    y = v0*t - 1.0/2*g*t**2
+    return(y)
+
+    Donde v0, g y t, son variables locales			
 				\end{lstlisting}
 				
 				
@@ -55,7 +62,7 @@ def contar_v1(adn,base):
         if c == base:
         i += 1
     return i
-				\end{lstlisting} Esta función lo que hace es contar cúantas veces el valor del índice es igual a la base, y se va almacenando en \textit{i} pero previamente convierte la cadena en lista.\\
+				\end{lstlisting} Esta función lo que hace es contar cuántas veces el valor del índice es igual a la base, y se va almacenando en \textit{i} pero previamente convierte la cadena en lista.\\
 				
 				
 				\item \begin{lstlisting}

@@ -19,38 +19,40 @@
 \end{center}%termina el centrado para la imagen
 \newpage%crea una nueva página
 
-\title{\huge Preguntas: Semana 1\\}%titulo2 \\ sirven para saltar una linea.
+\title{\huge Preguntas: 23 de enero de 2019\\}%titulo2 \\ sirven para saltar una linea.
 
-La semana 2 se resume en las siguientes preguntas:%letras de color azul
+
 \begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
-	\item ¿Qué es un algoritmo? \\
-	 Es un conjunto finito de instrucciones para resolver
-	 un problema especifico.
+	\item ¿Qué sucede al colocar un comentario entre ''' ''' después de definir una función? \\
+	 este aparece en el shell como una nota de ayuda o información emergente. La puedes utilizar para describir que hace la función, y que tipo de valores pueden tomar las variables por ejemplo.
 	
-	\item Cuando decimos que "range() es una lista inmutable de números enteros", ¿a qué se refiere con inmutable?\\
-	A que a diferencia de las listas, los range no se pueden modificar
-	\item ¿Qué es una tupla?\\
-	Es una lista que ya no puedes modificar, a diferencia de las listas que si es posible, pero si es posible extraer sus valores
+	\item ¿Cómo se les llama a las funciones que no tienen retorno?\\
+	Se les denomina rutinas o procedimientos; y en vez de retornar algo, este directamente imprime.
+	\item ¿Cuales son los dos valores de validez que existen en python, y cual es la diferencia?\\
+	Son las variables locales y las globales. LA diferencia es que los globales estan fuera, y pueden ser ocupadas por todas la funciones, mientras que las locales estan dentro de una funcion, y solo es parte de ella, y no de las demás.
 	
-	\item ¿Para que se utiliza {\textit{enumerate}}?\\
-	Te da el valor del índice y ademas el calor del indice dentro de la lista
-	
-	\item ¿Qué resulta tras la compilación de este código: {\textit{n=12; gradosC = [-5 + i*0.5 for i in range(n)]}}?
-	
-	Crea una lista de forma corta o por comprension, y el resultado es una sucesión de numeros enteros, con un rango de -5 a 0.5, y va aumentando en 1/2.
-		
-	
-	\item ¿Como funciona y para que sirve: {\textit{zip() :}}?\\
-	
-	Toma como argumento dos o más objetos iterables y regresa un nuevo iterable cuyos elementos son tuplas que contienen un elemento de cada uno de los objetos(listas por ejemplo).
+	\item ¿Qué sucede en la compilacion de los siguientes codigos, que observaciones puedes dar?\\
+	\begin{lstlisting}
+1.-L = []
+   if L:
+       print "hola"
 	
 	
-	\item Menciona que hace el siguiente código: \begin{verbatim}
-for i, c in enumerate(gradosC):
-    gradosC[i] = c +5
-    print i, c
-	\end{verbatim}
-	Al elemento de cada indice de gradosC le suma 5, e imprime el ìndice y c, que son los valores aumentados en 5.
+2.- L = [1,2,3]
+    if L:
+        print "hola mundo" 
+	\end{lstlisting}
+	La primera al evaluar la lista "L" con if verifica si es True o False, y como esta vacía el if la tomara como False y no va hacer nada, mientras que la segunda como tiene elementos, la tomara como True y va imprimir "hola mundo"
+
+	\item Menciona que tipo de funcion es y como funciona \begin{lstlisting}
+def suma(n):
+   if n>1:
+       return n + suma(n-1)
+   else:
+       return (1)
+	\end{lstlisting}
+	
+	Es una función recursiva, toma como caso base cuando n es igual a 1, entonces retorna 1. Entonces a partir de ahi, si le das una n mayor a 1 calculara los anteriores y los va sumando, hasta tener la suma de los n primero naturales.
 	
 	 
 	
