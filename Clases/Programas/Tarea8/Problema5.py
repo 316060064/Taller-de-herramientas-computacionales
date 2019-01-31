@@ -1,3 +1,12 @@
+#!/usr/bin/python2.7
+# -*- coding: utf-8 -*-
+'''
+Josué Artemio Hernández Rodríguez, 316060064
+'''
+
+
+
+
 '''L= []
 
 l1 = [True, True, True]
@@ -38,9 +47,9 @@ L =[[ True, True,   True, True],
     [False, False, False, True],
     [True,  True,  False, True]]
 
-L1 = [[1, 1,  1, 1],
+'''L1 = [[1, 1,  1, 1],
       [0, 0,  0, 1],
-      [1, 1,  0, 1]]
+      [1, 1,  0, 1]]'''
 
 def resolver(L,e):
     print e

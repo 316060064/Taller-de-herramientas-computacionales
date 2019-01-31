@@ -1,7 +1,7 @@
 #!/usr/bin/python2.7
 # -*- coding: utf-8 -*-
 '''
-
+Josué Artemio Hernández Rodríguez, 316060064
 '''
 
 def moverTorre(altura,origen, destino, intermedio):

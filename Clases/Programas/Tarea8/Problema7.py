@@ -1,9 +1,10 @@
+#!/usr/bin/python2.7
 # -*- coding: utf-8 -*-
-
 '''
 Josué Artemio Hernández Rodríguez
 
-Cuenta el numero de letras en una cadena
+Cuenta el numero de letras en una cadena, entonces le pondria
+def contador(l)
 '''
 
 

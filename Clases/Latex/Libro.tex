@@ -39,14 +39,14 @@
 
 
 
-\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
-	\item Distribuciones de Linux: %item sirve enlistar el elemento, este es el primer elemento enumerado.
+
+	\subsection{Distribuciones de Linux} %item sirve enlistar el elemento, este es el primer elemento enumerado.
 	\begin{enumerate}%Inicia otro enlistado dentro del listado anterior.
 		\item Fedora
 		\item Linux
 		\item Ubuntu
 	\end{enumerate}%finaliza el enlistado.
-	\item Comandos de Bash%Segundo elemento enumerado.
+	\subsection{Comandos de Bash} %inicia una subsección
 	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
 		\item set
 		\item cd: nos dirige a un directorio
@@ -58,7 +58,7 @@
 		\item cmod "   ": Modifica los permisos de un archivo o directorio en especifico
 		
 	\end{itemize}%finaliza enlistado con itemize
-	\item Como vamos a trabajar en el curso
+	\subsection {Como vamos a trabajar en el curso}
 	\begin{itemize}
 		\item Libro de python disponible en la bibliografia de la materia, y gratuito en \url{www.bibliotecas.unam.mx}
 		\item Resumenes de las clases en LaTeX
@@ -69,7 +69,7 @@
 	
 	
 	
-\end{enumerate}%finaliza el enlistado principal
+
 
 
 %fin resumen 1
@@ -79,12 +79,12 @@
 
 \section{\textit{Clase en laboratorio}}%titulo2 \\ sirven para saltar una linea.
 \begin{flushright}
-	\date{08 de enero de 2019}
+	\date{08 de enero de 2019}  %Coloca un texto centrado a la derecha
 \end{flushright}
 
-\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+
 	
-	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+	\subsection {Algunos conceptos y software utilizado en clase}%item sirve enlistar el elemento, este es el primer elemento enumerado.
 	\begin{itemize}
 		\item bash: Define la forma en como esta funcionando el sistema
 		\item Path : Ruta donde va buscar los binarios
@@ -94,19 +94,19 @@
 		
 	\end{itemize}
 	
-	\item Comandos de Bash%Segundo elemento enumerado.
+	\subsection {Comandos de Bash}%Segundo elemento enumerado.
 	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
 		\item file /tmp/* Muestra que tipo de archivos hay en esa ruta
 		\item set | less : Muestra paginando el contenido, para pasar a la pagina siguiente se oprime "RePág" o retrocede con "AvPág"
 		
 		
 	\end{itemize}%finaliza enlistado con itemize
-	\item Còmo instalar y configurar tigervnc
+	\subsection {Cómo instalar y configurar tigervnc}
 	\begin{enumerate}
 		\item En la terminal, escribir "dnf install tygervnc" y esperar que se instale tigervnv
 		\item Escribir la ip: "192.168.13.125"
 	\end{enumerate}
-	\item Còmo instalar y configurar git
+	\subsection {Cómo instalar y configurar git}
 	\begin{enumerate}
 		\item Teclear en la terminal "sudo yum install git", esperar a que se instalen los paquetes necesarios...
 		\item Teclear  git config --global user.email "tuemail@dominio.com"
@@ -122,7 +122,7 @@
 	
 	
 	
-	\end{enumerate}%finaliza el enlistado principal
+
 
 
 %fin resumen 2
@@ -133,8 +133,8 @@
 	\date{09 de enero de 2019}
 \end{flushright}
    
-   \begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
-   	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+  % \begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+   	\subsection {Algunos conceptos y software utilizado en clase}%item sirve enlistar el elemento, este es el primer elemento enumerado.
    	\begin{itemize}
    		\item git esta compuesto por un cliente web y otro en modo texto
    		\item Un archico o directorio que tiene esta estrcutura ".archivo/" significa que esta oculto
@@ -142,7 +142,7 @@
    		\item Gitlab cumple con la mismas funciones que github, la de tener en la nube tus repositorios
    	\end{itemize}
    	
-   	\item Comandos de Bash%Segundo elemento enumerado.
+   	\subsection {Comandos de Bash}%Segundo elemento enumerado.
    	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
    		\item "gedit" o "vi" abren los editores de texto correspondintes
    		\item cat muestra el contenido de un archivo
@@ -154,7 +154,7 @@
    		
    		
    	\end{itemize}%finaliza enlistado con itemize
-   	\item Pasos para resolver un problema eficazmente
+   	\subsection {Pasos para resolver un problema eficazmente}
    	\begin{enumerate}
    		\item Problema
    		\item Definir (entender)
@@ -164,7 +164,7 @@
    		\item Solución general
    	\end{enumerate}
    	
-\end{enumerate}
+%\end{enumerate}
 
 %fin resumen 3	
 
@@ -176,15 +176,15 @@
 \end{flushright}
 
 
-\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
-	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+%\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\subsection {Algunos conceptos y software utilizado en clase}%item sirve enlistar el elemento, este es el primer elemento enumerado.
 	\begin{enumerate}
 		\item idle: Es un IDE, entornno de desarrollo integrado, dicho de otro modo es un editor especializado que tiene una forma de comunicación con el interprete, una de sus ventajas es que tiene herramienta de depuracion de errores
 		\item shell, es un interprete de comandos, forma parte de las herramientas de idle
 		\item En python, el símbolo de "gato" se utiliza para realizar comentarios en el código
 	\end{enumerate}
 	
-	\item Comandos de Bash y python %Segundo elemento enumerado.
+	\subsection {Comandos de Bash y python} %Segundo elemento enumerado.
 	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
 		\item dnf install python-tools : instala los paquetes necesarios para usar idle
 		\item python + doble Tab , muestra los archivos que inician con la palabra python
@@ -197,19 +197,19 @@
 	
 	
 	
-\end{enumerate}%finaliza el enlistado principal
+%\end{enumerate}%finaliza el enlistado principal
 
 
 %fin res 4
-
+\newpage
 % Inicio res 5
 \section{\textit{Trabajando con python y \LaTeX}}%titulo2 \\ sirven para saltar una linea.
-\begin{flushright}
+	\begin{flushright}
 	\date{11 de enero de 2019}
-\end{flushright}
+	\end{flushright}
 
-\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
-	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+%\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\subsection {Algunos conceptos y software utilizado en clase}%item sirve enlistar el elemento, este es el primer elemento enumerado.
 	\begin{itemize}
 		\item '''texto''' se utiliza para realizar un comentario con multilinea y para que aparezcan en pantalla basta usar antes el comando print 			
 		\item Scrip: Son instrucciones de Bash o en otro lenguaje que siguen una secuencia especifica			
@@ -217,7 +217,7 @@
 		\item Un modulo en python es una secuencia de funciones.
 	\end{itemize}
 	
-	\item Comandos de python%Segundo elemento enumerado.
+	\subsection {Comandos de python}%Segundo elemento enumerado.
 	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
 		\item El simbolo \% en python sirve para denotar que se va sustituir por una variable, y en LaTex se usa para realizar comentarios.
 		\item se utiliza "\%g" para expresar el flotanto en su forma mas corta
@@ -229,7 +229,7 @@
 		
 		
 	\end{itemize}%finaliza enlistado con itemize
-	\item Comandos de LaTeX y comandos en terminal para instalar paquetes necesarios
+	\subsection {Comandos de LaTeX y comandos en terminal para instalar paquetes necesarios}
 	\begin{enumerate}
 		\item Para instalar texstudio basta con escribir en la terminal "dnf install texstudio"
 		\item Que significa la estructura de LaTeX
@@ -260,7 +260,9 @@
 		
 	\end{enumerate}
 	
-\end{enumerate}%finaliza el enlistado principal
+%\end{enumerate}%finaliza el enlistado principal
+
+
 %fin res 5
 
 
@@ -270,8 +272,8 @@
 	\date{14 de enero de 2019}
 \end{flushright}
 
-\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
-	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+%\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\subsection {Algunos conceptos y software utilizado en clase}%item sirve enlistar el elemento, este es el primer elemento enumerado.
 	\begin{itemize}
 		\item Un algoritmo es un conjunto finito de instrucciones para resolver un problema especifico.
 		\item La diferencia de una igualdad y una asignacion es que una se puede despejar y la otra no.			
@@ -280,7 +282,7 @@
 		
 	\end{itemize}
 	
-	\item Comandos de python%Segundo elemento enumerado.
+	\subsection {Comandos de python}%Segundo elemento enumerado.
 	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
 		\item if Es una condición, aquí van las órdenes que se ejecutan si la condición es cierta
 		y que pueden ocupar varias líneas
@@ -292,7 +294,7 @@
 		
 		
 	\end{itemize}%finaliza enlistado con itemize
-	\item Algunas flavors de linux son:
+	\subsection {Algunas flavors de linux son:}
 	\begin{itemize}
 		\item KDE Desktop
 		\item XFCE Desktop
@@ -300,13 +302,13 @@
 		\item Cinnamon
 		\item LXDE Desktop (apta para PC's antiguas)
 	\end{itemize}
-	\item Que hicimos en clase... \\
-	\\
-	Vimos como es un proceso de asignacion en python y como se diferencia con una igualdad. En una asignacion puede volverse iteractivo, en un numero finito de pasos para resolver un problema especifico, en el caso de la clase de hoy fue aproximar el area de un paralelogramo de lado x * 1 con el de area de un cuadrado de lado $\sqrt{x}$
+	\subsection{ Que hicimos en clase...} 
+	
+	Vimos como es un proceso de asignación en python y como se diferencia con una igualdad. En una asignación puede volverse iterativo, en un numero finito de pasos para resolver un problema especifico, en el caso de la clase de hoy fue aproximar el area de un paralelogramo de lado x * 1 con el de área de un cuadrado de lado $\sqrt{x}$
 	
 		
 	
-\end{enumerate}%finaliza el enlistado principal
+%\end{enumerate}%finaliza el enlistado principal
 
 
 %fin res 6
@@ -318,8 +320,8 @@
 	\date{15 de enero de 2019}
 \end{flushright}
 
-\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
-	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+%\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\subsection {Algunos conceptos y software utilizado en clase}%item sirve enlistar el elemento, este es el primer elemento enumerado.
 	\begin{itemize}
 		\item Partes globales son: definir valores iniciales, parte que procesa la información, y parte del resultado.	
 		\item La diferencia entre if y while es que if se realiza una vez y while 0 o más veces		
@@ -327,9 +329,9 @@
 		\item Tex se encarga de organizar un documento, y LaTeX es una herramienta de creación de documentos
 	\end{itemize}
 	
-	\item Comandos de python%Segundo elemento enumerado.
+	\subsection {Comandos de python}%Segundo elemento enumerado.
 	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
-		\item while : Es un bucle qie mientras la condicion no se cumpla sigue ejecutandose hasta que sea verdadero
+		\item while : Es un bucle que mientras la condición no se cumpla sigue ejecutándose hasta que sea verdadero
 		\item if : Condicional que si es verdadero ejecuta
 		\item a = 5 : Es una asignación
 		\item a == 5 : Es de comparación
@@ -337,7 +339,7 @@
 		
 		
 	\end{itemize}%finaliza enlistado con itemize
-	\item Comandos de LaTeX
+	\subsection {Comandos de LaTeX}
 	\begin{itemize}
 		\item  
 		\begin{lstlisting}  
@@ -366,7 +368,7 @@ $\frac{\frac{3}{4}}{\frac{2}{3}}$
 		\begin{lstlisting}  
 $\sqrt{2} 
 \sqrt{3^2}^2$
-		\end{lstlisting} Expresan raiz cuadrada de un numero y la otra la raiz cuadrada elevada a una potencia, en este caso 2
+		\end{lstlisting} Expresan raíz cuadrada de un numero y la otra la raíz cuadrada elevada a una potencia, en este caso 2
 		\item
 		\begin{lstlisting} 
 $\int_{a}^{b} x^2$
@@ -393,7 +395,7 @@ $3\quad 2$
 	
 	
 	
-\end{enumerate}%finaliza el enlistado principal
+%\end{enumerate}%finaliza el enlistado principal
 
 
 
@@ -407,8 +409,8 @@ $3\quad 2$
 	\date{16 de enero de 2019}
 \end{flushright}
 
-\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
-	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+%\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\subsection{Algunos conceptos y software utilizado en clase}%item sirve enlistar el elemento, este es el primer elemento enumerado.
 	\begin{itemize}
 		\item Metodo: Son las acciones que realiza un objeto, modifican un objeto o hace que interaccione con otro.
 		\item Dentro de una biblioteca se define una clase y en la biblioteca hay funciones o metodos (asociados a un objeto)	
@@ -416,7 +418,7 @@ $3\quad 2$
 		
 	\end{itemize}
 	
-	\item Comandos de bash%Segundo elemento enumerado.
+	\subsection {Comandos de bash}%Segundo elemento enumerado.
 	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
 		\item ctrl + z : Pone en pausa un proceso
 		\item bg : Puedo usar la terminal sin pausar los procesos
@@ -434,14 +436,14 @@ $3\quad 2$
 		
 	\end{itemize}%finaliza enlistado con itemize	
 	
-	\item Comandos y código de python
+	\subsection {Comandos y código de python}
 	\begin{itemize}
 		\item \#!/usr/bin/python2.7  : Se coloca en nuestro programa de python para especificarle que utilice cierte interprete para ejecutarlo, en este caso es python2.7
 		\item "x,y,z" Es una cadena con las variables x, y \& z
 		\item x,y,z= Es una asignacion de valores
 		\item 'x,y,z'. split(",") Nos separa las letras en comas
 	\end{itemize}
-	\item Código de \LaTeX
+	\subsection {Código de \LaTeX}
 	\begin{itemize}
 		\item 
 		\begin{lstlisting}
@@ -475,7 +477,7 @@ $\sum$ : Nos coloca el simbolo de suma
 	
 	
 	
-\end{enumerate}%finaliza el enlistado principal
+%\end{enumerate}%finaliza el enlistado principal
 
 
 %fin res 8
@@ -488,15 +490,15 @@ $\sum$ : Nos coloca el simbolo de suma
 	\date{17 de enero de 2019}
 \end{flushright}
 
-\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
-	\item Algunos conceptos y software utilizado en clase%item sirve enlistar el elemento, este es el primer elemento enumerado.
+%\begin{enumerate}%Inicio de númeración para enlistar las cosas vistas en clase.
+	\subsection { Algunos conceptos y software utilizado en clase}%item sirve enlistar el elemento, este es el primer elemento enumerado.
 	\begin{itemize}
 		\item Se pueden importar paquetes de sistema operativo a python, y de esta forma tener de forma clara en que directorio nos encontramos, o movernos de directorio si es necesario. Esto nos sirve para movernos donde esta un modulo en especifico y asi importar una función.
 		\item Cuando se necesite cambiar el valor de una variable a otra, es de suma importancia usar un auxiliar para que el valor que tenia antes no se pierda.	
 		
 	\end{itemize}
 	
-	\item Código en python%Segundo elemento enumerado.
+	\subsection {Código en python}%Segundo elemento enumerado.
 	\begin{itemize}%comienza el enlistado pero itemize a diferencia de enumerate enlista sin un orden secuencial (es decir no utiliza números, ni letras)
 		\item r != 0: Nos dice que si r es diferente de cero.
 		\item a\%b = c : El operador modulo nos da como resultado el residuo de la división.
@@ -507,7 +509,7 @@ $\sum$ : Nos coloca el simbolo de suma
 		
 		
 	\end{itemize}%finaliza enlistado con itemize
-	\item Código de \LaTeX
+	\subsection{Código de \LaTeX}
 	\begin{itemize}
 		\item 
 		\begin{lstlisting}
@@ -578,7 +580,7 @@ $\sum$ : Nos coloca el simbolo de suma
 	
 	
 	
-\end{enumerate}%finaliza el enlistado principal
+%\end{enumerate}%finaliza el enlistado principal
 
 
 %fin res 9
@@ -591,20 +593,20 @@ $\sum$ : Nos coloca el simbolo de suma
 	\date{18 de enero de 2019}
 \end{flushright}
 
-\begin{enumerate}
-	\item Conceptos
+%\begin{enumerate}
+	\subsection {Conceptos}
 	\begin{itemize}
 		\item Las listas en python son una herramienta muy interesante y potente que nos sirve para recolentar datos de manera robusta, estos datos adquieren la cualidad de objetos dentro de la lista.
 		\item La diferencia de posición e índice es que la posición es un número n del 1 a un numero fínito, y el índice es (n-1).
 	\end{itemize}
 	
-	\item Comandos de bash
+	\subsection {Comandos de bash}
 	\begin{itemize}
 		\item {\textit{idle ; emacs} }: El punto y coma separa comandos en bash, en este caso los comandos para abrir dos programas. No los abre juntos, si no que el segundo solo se abre al cerrarse el primero.
 		\item {\textit{idle \& emacs}} : La separacion de dos comandos con \& representa que ambos se ejecutan al mismo tiempo. A diferencia del anterior, uno no depende del otro.
 	\end{itemize}
 	
-	\item Código de python
+	\subsection{Código de python}
 	\begin{itemize}
 		\item {\textit{type(cadena)}} : Type nos sirve para evaluar de que tipo es una variable, es decir, cadena, entero, flotante, etc.
 		\item {\textit{bool(cadena)}} : Evalua si una variable es booleano, si lo es regresa {\textit{True}}, si no lo es {\textit{False}}. Si es cero regresa False y si es diferente de cero True.
@@ -613,7 +615,7 @@ $\sum$ : Nos coloca el simbolo de suma
 		\item len(L) : Nos dice de cuantos elementos esta conformada una lista.
 		\item L.insert(3,"otra cadena"): Nos dice que  en el índice 3 agrega el elemento "otra cadena".
 		\item L[3] : Nos muestra cual es el elemento con índice 3 dentro de la lista L
-		\item len(L[5]) : Nos dice cual es la longitud del elemento con índice 5  dentro de la cadena L. Seria trivial si fuera una lista de solo unos cuantos numeros, asi que es util si la lista contiene como elementos otras listas.
+		\item len(L[5]) : Nos dice cual es la longitud del elemento con índice 5  dentro de la cadena L. Seria trivial si fuera una lista de solo unos cuantos números, así que es útil si la lista contiene como elementos otras listas.
 		\item L.pop() : Saca un elemento de la lista L. Si no le especifico un índice dentro de () sacara el ultimo de la lista.
 		\item L.extend : Agrega elementos independientes a una lista
 		\item L[3] + L[len(L)-1] : Junta los elementos con indice 3 y el ultimo de la lista en uno solo, es decir si L[3]= ¿Cómo y L[len(L)-1] = estás?, entro de la lista L[1,2,3,"¿Cómo,45,62,"estás?"], nos da como resultado, "¿Cómoestás?"
@@ -635,7 +637,7 @@ print 'La lista C tiene: ',len(C), 'elementos'
 	\end{itemize}
 	
 	
-\end{enumerate}
+%\end{enumerate}
 
 %fin res 10
 
@@ -645,8 +647,8 @@ print 'La lista C tiene: ',len(C), 'elementos'
 	\date{21 de enero de 2019}
 \end{flushright}
 
-\begin{enumerate}
-	\item Conceptos
+%\begin{enumerate}
+	\subsection {Conceptos}
 	\begin{itemize}
 		\item El tipo range() es una lista inmutable de números enteros en sucesión aritmética.Inmutable significa que, a diferencia de las listas, los range no se pueden modificar, una sucesión artimética es una sucesión en la que la diferencia entre dos términos consecutivos es siempre la misma.
 		
@@ -656,7 +658,7 @@ print 'La lista C tiene: ',len(C), 'elementos'
 	
 	
 	
-	\item Código de python
+	\subsection {Código de python}
 	\begin{itemize}
 		\item {\textit{enumerate}} : Te da el valor del índice y ademas el calor del indice dentro de la lista
 		\item {\textit{[ ]}} : Los corchetes nos ayudan a acceder a un elemento dentro de una lista o para definir una lista.
@@ -685,7 +687,7 @@ for i in range(len(L1)):
 	
 	
 	
-\end{enumerate}
+%\end{enumerate}
 
 
 %fin res 11
@@ -697,11 +699,11 @@ for i in range(len(L1)):
 	\date{22 de enero de 2019}
 \end{flushright}
 
-\begin{enumerate}
-	\item Conceptos
+%\begin{enumerate}
+	\subsection {Conceptos}
 	\begin{itemize}
-		\item Las sublistas sirven para analizar informacion en un rango.
-		\item Se puede decir que las listas en python son listas circulares, porque si expecificas un índice negativo toma valores de derecha a izquierda.
+		\item Las sublistas sirven para analizar información en un rango.
+		\item Se puede decir que las listas en python son listas circulares, porque si especificas un índice negativo toma valores de derecha a izquierda.
 		\item Referencia, es cuando le asignamos el valor de una variable a otra.
 		\item Los atributos y metodos estan alojados en la memoria, y estan sumamente relacionados con los objetos.
 		\item Las variables son identificadores de un valor especifico
@@ -711,7 +713,7 @@ for i in range(len(L1)):
 	
 	
 	
-	\item Código de python
+	\subsection {Código de python}
 	\begin{itemize}
 		\item {\textit{A[2:]}} : Regresa valores a partir del indice 2
 		\item {\textit{A[1:3]}} : Pone como rango de elementos a mostrar al índice 1 y 3, pero no se muestra el 3, digamos que es un intervalo cerrado/abierto.
@@ -730,7 +732,7 @@ for i in range(len(L1)):
 	\end{itemize}
 	
 	
-	\item Comandos de \LaTeX
+	\subsection {Comandos de \LaTeX}
 	\begin{itemize}
 		\item \begin{lstlisting}
 \documentclass{beamer}
@@ -754,7 +756,7 @@ for i in range(len(L1)):
 		
 	\end{itemize}
 	
-\end{enumerate}
+%\end{enumerate}
 
 %fin res 12
 
@@ -767,8 +769,8 @@ for i in range(len(L1)):
 	\end{flushright}
 
 
-\begin{enumerate}
-	\item Conceptos y datos importantes de la clase
+%\begin{enumerate}
+	\subsection {Conceptos y datos importantes de la clase}
 	\begin{itemize}
 		\item Si colocamos un comentario despues de definir una función, este aparece en el shell como una nota de ayuda o de información emergente. La puedes utilizar para describir que hace la función, y ademas aparece por que valores puedes sustituir las variables que se encuentran dentro del parentesis de la función.
 		\item Las funciones que no tienen retorno se les denomina rutinas o procedimientos.
@@ -782,7 +784,7 @@ for i in range(len(L1)):
 	
 	
 	
-	\item Código de python
+	\subsection {Código de python}
 	\begin{itemize}
 		\item \begin{lstlisting}
 def fib(n):
@@ -845,7 +847,7 @@ if a:
 	
 	
 	
-\end{enumerate}
+%\end{enumerate}
 
 
 %fin res 13
@@ -860,8 +862,8 @@ if a:
 	\date{24 de enero de 2019\\}
 \end{flushright}
 
-\begin{enumerate}
-	\item Conceptos y datos importantes de la clase
+%\begin{enumerate}
+	\subsection {Conceptos y datos importantes de la clase}
 	\begin{itemize}
 		\item Una forma interesante de darle formato a una lista y que se asemeje a una matriz es usando numpy, y se manda llamar de esta manera: \textit{print (np.matrix(L))}\\
 		
@@ -887,7 +889,7 @@ Donde v0, g y t, son variables locales
 	
 	
 	
-	\item Código de python
+	\subsection { Código de python}
 	\begin{itemize}
 		\item \begin{lstlisting}
 adn= 'ATGCGACCTAT'
@@ -899,7 +901,7 @@ def contar_v1(adn,base):
        if c == base:
            i += 1
            return i
-		\end{lstlisting} Esta función lo que hace es contar cúantas veces el valor del índice es igual a la base, y se va almacenando en \textit{i} pero previamente convierte la cadena en lista.\\
+		\end{lstlisting} Esta función lo que hace es contar cuantas veces el valor del índice es igual a la base, y se va almacenando en \textit{i} pero previamente convierte la cadena en lista.\\
 		
 		
 		\item \begin{lstlisting}
@@ -995,7 +997,7 @@ r =resolver(L,e)
 	
 	
 	
-\end{enumerate}
+%\end{enumerate}
 %fin res 14
 
 
@@ -1027,7 +1029,7 @@ La semana se resume en las siguientes preguntas:%letras de color azul
 	Con el comando "dnf yum install tigervnc" y sirve para ver remotamente en mi pantalla lo que se trasmite desde otra desde la misma red.
 	
 	\item ¿Para qué sirve git pull?\\
-	Para obtener una actualizacion de mis datos alojados en mi ciente de github y asi evitar inconsistencias
+	Para obtener una actualización de mis datos alojados en mi ciente de github y así evitar inconsistencias
 	
 	\item Menciona dos o mas editores de texto en Linux que conozcas\\
 	vi, nano, y gedit
@@ -1042,7 +1044,7 @@ La semana se resume en las siguientes preguntas:%letras de color azul
 	Con \# y con '''  '''
 	\item Si tienes una variable con una cadena, ¿cómo haces para mostrar su contenido con print?\\
 	Debo poner print '\%s' \%(c1) donde c1 es otra variable especificada
-	\item ¿Qué son los modulos de python?\\
+	\item ¿Qué son los módulos de python?\\
 	Son bibliotecas de funciones
 	\item ¿En python a que se refiere \%g o  \%f, \%e o \%E, y \%d?\\
 	En primera instancia, \% denota que se va sustituir por el valor de una variable ya definida por el ususario, y \%g o  \%f se refieren a que se va expresar en flotante en su formato mas corto o simplemente como un flotante; \%e o \%E se refiere a que se va sustituir por una variable y se expresara en formato científico, y la diferencia radica en que se expresara con minisucula o mayusculo a consideración del usuario; y \%d se refiere a que se expresara como un entero.
